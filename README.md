@@ -1,335 +1,151 @@
 # Autoregressive Speech Prediction with EnCodec and FACodec Token Language Models
 
-**Author:** Yang Jiekang  
-**Student ID:** 225010280  
-**Course:** MDS5122  
-**Project:** Final Project — Autoregressive Speech Prediction  
+A lightweight research implementation of autoregressive speech prediction using discrete neural audio codec tokens.
 
-This repository contains the implementation and experimental results for an autoregressive speech prediction system based on discrete neural codec tokens. The system uses EnCodec and FACodec representations, trains Transformer language models over codec tokens, predicts future speech tokens from a 2-second context, decodes the predicted tokens back into waveform audio, and evaluates the generated speech using STOI, PESQ, and DNSMOS.
+This project predicts a future speech segment from a short speech context. It encodes waveform audio into discrete codec tokens, trains Transformer language models over those tokens, generates future tokens autoregressively, decodes the predicted tokens back into waveform audio, and evaluates the generated speech using objective speech metrics.
 
 ---
 
-## 1. Project Overview
+## Overview
 
-The goal of this project is to predict a future 1-second speech segment given the previous 2 seconds of speech.
+The task is to predict the next **1 second** of speech given the previous **2 seconds** of speech.
 
-The main task setting is:
+The main experimental setting is:
 
 - **Input context:** speech from 0s to 2s
 - **Prediction target:** speech from 2s to 3s
 - **Main codec:** EnCodec 24 kHz mono model
+- **Auxiliary codec analysis:** FACodec
 - **Main model:** decoder-only Transformer language model
-- **Main prediction strategy:** first-codebook prediction with repeat-last filling for remaining codebooks
 - **Evaluation metrics:** STOI, PESQ, DNSMOS
 
 The overall pipeline is:
 
-    waveform
-      -> neural audio codec encoder
-      -> discrete codec tokens
-      -> Transformer codec language model
-      -> predicted future codec tokens
-      -> codec decoder
-      -> predicted future waveform
-      -> STOI / PESQ / DNSMOS evaluation
+```text
+Waveform
+  → Neural audio codec encoder
+  → Discrete codec tokens
+  → Transformer codec language model
+  → Predicted future codec tokens
+  → Neural audio codec decoder
+  → Predicted future waveform
+  → STOI / PESQ / DNSMOS evaluation
+```
 
-The main EnCodec system predicts only the first EnCodec codebook to reduce memory usage. During waveform reconstruction, the remaining codebooks are filled using a repeat-last strategy. This makes the system feasible on a local RTX 2060 GPU, but it also limits waveform quality compared with a full multi-codebook prediction system.
+The main EnCodec system predicts the first EnCodec codebook and fills the remaining codebooks using a repeat-last heuristic. This design keeps the system lightweight and reproducible while highlighting the importance of multi-codebook modeling.
 
 ---
 
-## 2. Main Results
+## Key Features
 
-The final full-set evaluation was conducted on **644 test utterances**.
+- Autoregressive future speech prediction
+- EnCodec-based waveform tokenization
+- FACodec oracle and per-codebook analysis
+- Transformer language modeling over codec tokens
+- Copy baseline for future speech prediction
+- EnCodec oracle reconstruction upper bound
+- Greedy decoding and top-k sampling comparison
+- STOI, PESQ, and DNSMOS evaluation
+- Lightweight reproducible training and evaluation scripts
+- Analysis of multi-codebook modeling difficulty
 
-| System | # Utt. | STOI | PESQ | DNSMOS |
+---
+
+## Main Results
+
+The main full-set evaluation was conducted on **644 test utterances**.
+
+| System | # Utterances | STOI | PESQ | DNSMOS |
 |---|---:|---:|---:|---:|
 | Copy baseline | 644 | 0.137 | 1.053 | 2.480 |
 | EnCodec oracle | 644 | 0.910 | 2.506 | 2.071 |
 | EnCodec small | 644 | 0.351 | 1.108 | 1.485 |
 | EnCodec top-k20 | 644 | 0.204 | 1.086 | 1.618 |
 
-Important notes:
+### Interpretation
 
-- **STOI** and **PESQ** are reference-based metrics.
-- **DNSMOS** is a no-reference perceptual speech quality metric.
-- The copy baseline has the highest DNSMOS because it directly copies real speech from the previous context, so the waveform sounds natural even though it does not match the true future segment.
-- The EnCodec small model improves over the copy baseline in STOI, showing that the Transformer language model learns useful future-token prediction patterns.
-- The large gap between EnCodec small and EnCodec oracle shows that future token prediction, especially multi-codebook prediction, is the main bottleneck.
-
----
-
-## 3. Repository Structure
-
-The project directory is organized as follows:
-
-    speech_prediction_project/
-    |
-    |-- codec/
-    |   |-- encodec_wrapper.py
-    |   |-- extract_encodec_tokens.py
-    |   |-- facodec_wrapper.py
-    |
-    |-- data/
-    |   |-- prepare_filelist.py
-    |   |-- dataset.py
-    |   |-- train.txt
-    |   |-- valid.txt
-    |   |-- test.txt
-    |   |-- train_debug.txt
-    |   |-- valid_debug.txt
-    |   |-- test_debug.txt
-    |
-    |-- models/
-    |   |-- transformer_lm.py
-    |
-    |-- checkpoints/
-    |   |-- encodec_debug/
-    |   |-- encodec_small/
-    |   |-- encodec_medium/
-    |
-    |-- tokens/
-    |   |-- encodec/
-    |       |-- train/
-    |       |-- valid/
-    |       |-- test/
-    |
-    |-- generated/
-    |   |-- copy_baseline/
-    |   |-- encodec_oracle/
-    |   |-- encodec_small/
-    |   |-- encodec_topk20/
-    |
-    |-- outputs/
-    |   |-- copy_baseline_results.csv
-    |   |-- encodec_oracle_results.csv
-    |   |-- encodec_small_results.csv
-    |   |-- encodec_topk20_results.csv
-    |   |-- copy_baseline_dnsmos_summary.csv
-    |   |-- encodec_oracle_dnsmos_summary.csv
-    |   |-- encodec_small_dnsmos_summary.csv
-    |   |-- encodec_topk20_dnsmos_summary.csv
-    |   |-- dnsmos_all_systems_summary.csv
-    |
-    |-- logs/
-    |   |-- encodec_small_train_log.csv
-    |
-    |-- train.py
-    |-- generate.py
-    |-- evaluate.py
-    |-- evaluate_copy_baseline.py
-    |-- evaluate_oracle.py
-    |-- compute_dnsmos.py
-    |-- requirements.txt
-    |-- README.md
-
-Large raw datasets and large checkpoints may be excluded from the submitted archive. They can be regenerated by following the steps in this README.
+- **EnCodec small** improves over the copy baseline in reference-based metrics, especially STOI.
+- **EnCodec oracle** is much stronger than the learned prediction model, showing that the main bottleneck is future token prediction rather than codec reconstruction alone.
+- **Copy baseline** has the highest DNSMOS because it copies real speech from the previous context. DNSMOS is no-reference, so it measures naturalness rather than whether the generated audio matches the true future segment.
+- **Top-k sampling** improves no-reference quality slightly but reduces reference-based future prediction accuracy.
 
 ---
 
-## 4. Environment Setup
+## Repository Structure
 
-### 4.1 Create Conda Environment
+```text
+speech_prediction_project/
+├─ codec/
+│  ├─ encodec_wrapper.py
+│  └─ extract_encodec_tokens.py
+│
+├─ data/
+│  ├─ prepare_filelist.py
+│  ├─ dataset.py
+│  ├─ check_wav_info.py
+│  ├─ train.txt
+│  ├─ valid.txt
+│  ├─ test.txt
+│  ├─ train_debug.txt
+│  ├─ valid_debug.txt
+│  └─ test_debug.txt
+│
+├─ models/
+│  └─ transformer_lm.py
+│
+├─ scripts/
+│  ├─ train.py
+│  ├─ generate.py
+│  ├─ evaluate.py
+│  ├─ evaluate_copy_baseline.py
+│  ├─ evaluate_oracle.py
+│  ├─ compute_dnsmos.py
+│  ├─ summarize_dataset_info.py
+│  ├─ summarize_model_configs.py
+│  └─ summarize_report_results.py
+│
+├─ outputs/
+│  ├─ report_full_eval_summary.csv
+│  ├─ report_model_training_summary.csv
+│  ├─ report_oracle_small16_summary.csv
+│  └─ facodec_lm_all_codebooks_metrics.csv
+│
+├─ logs/
+│  ├─ experiment_status_20260429.md
+│  └─ generation_status_20260430.md
+│
+├─ report.pdf
+├─ report.tex
+├─ requirements.txt
+└─ README.md
+```
 
-    conda create -n speech_pred python=3.10 -y
-    conda activate speech_pred
-
-### 4.2 Install PyTorch
-
-For CUDA 11.8:
-
-    pip install torch torchaudio torchvision --index-url https://download.pytorch.org/whl/cu118
-
-For CPU-only environments:
-
-    pip install torch torchaudio torchvision
-
-### 4.3 Install Project Dependencies
-
-    pip install encodec
-    pip install soundfile librosa tqdm pyyaml einops
-    pip install torchmetrics
-    pip install pystoi pesq
-    pip install pandas matplotlib scipy
-    pip install onnxruntime
-
-Alternatively, install all dependencies from `requirements.txt`:
-
-    pip install -r requirements.txt
-
-### 4.4 Check GPU Availability
-
-    python -c "import torch; print(torch.__version__); print(torch.cuda.is_available()); print(torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'CPU')"
-
-On the local machine used in this project, the expected GPU was:
-
-    NVIDIA GeForce RTX 2060
-
----
-
-## 5. Dataset Preparation
-
-The experiments use WSJCAM0-style or WSJ0-style speech data.
-
-Place the raw `.wav` files in a dataset directory, for example:
-
-    E:\Working\deep-learning\datasets\wsjcam0_wavs
-
-The directory may contain nested speaker folders:
-
-    wsjcam0_wavs/
-    |-- speaker_001/
-    |   |-- utt001.wav
-    |   |-- utt002.wav
-    |-- speaker_002/
-    |   |-- utt003.wav
-    |   |-- utt004.wav
-
-Only utterances with duration of at least 3 seconds are used for the final speech prediction task, because the model needs:
-
-- 2 seconds of context speech
-- 1 second of future reference speech
+Large generated artifacts such as model checkpoints, token caches, generated audio, and raw waveform datasets are intentionally excluded from the repository.
 
 ---
 
-## 6. Generate Train / Validation / Test Filelists
+## Method
 
-Run the following command to scan the dataset and generate filelists:
+### EnCodec Token Modeling
 
-    python data\prepare_filelist.py ^
-      --wav_dir E:\Working\deep-learning\datasets\wsjcam0_wavs ^
-      --out_dir data ^
-      --min_duration 3.0 ^
-      --train_ratio 0.8 ^
-      --valid_ratio 0.1 ^
-      --test_ratio 0.1 ^
-      --seed 42
+The main pipeline uses the EnCodec 24 kHz mono model at 6.0 kbps bandwidth.
 
-This generates:
+EnCodec produces multiple discrete codebook streams. To keep training lightweight, the main Transformer language model predicts only the first codebook.
 
-    data/train.txt
-    data/valid.txt
-    data/test.txt
+During generation:
 
-Each file contains absolute paths to waveform files.
+1. The first 2 seconds of speech are used as context.
+2. The model predicts future first-codebook tokens autoregressively.
+3. The remaining codebooks are filled using a repeat-last strategy.
+4. EnCodec decodes the complete token tensor back into waveform audio.
 
-The final split used in the report contains:
-
-| Split | # Utterances |
-|---|---:|
-| Train | 12,479 |
-| Validation | 1,176 |
-| Test | 644 |
+This creates a compact baseline for codec-token speech prediction.
 
 ---
 
-## 7. Create Debug Subsets
+### Transformer Language Model
 
-Before running the full pipeline, create small debug filelists:
-
-    powershell -Command "Get-Content data\train.txt -TotalCount 100 | Set-Content data\train_debug.txt"
-    powershell -Command "Get-Content data\valid.txt -TotalCount 20 | Set-Content data\valid_debug.txt"
-    powershell -Command "Get-Content data\test.txt -TotalCount 20 | Set-Content data\test_debug.txt"
-
-The debug subsets are used to quickly test token extraction, model training, waveform generation, and metric evaluation.
-
----
-
-## 8. EnCodec Token Extraction
-
-The main system uses the EnCodec 24 kHz mono model with 6.0 kbps bandwidth.
-
-### 8.1 Extract Debug Tokens
-
-    python codec\extract_encodec_tokens.py ^
-      --filelist data\train_debug.txt ^
-      --output_dir tokens\encodec\train_debug ^
-      --bandwidth 6.0
-
-    python codec\extract_encodec_tokens.py ^
-      --filelist data\valid_debug.txt ^
-      --output_dir tokens\encodec\valid_debug ^
-      --bandwidth 6.0
-
-    python codec\extract_encodec_tokens.py ^
-      --filelist data\test_debug.txt ^
-      --output_dir tokens\encodec\test_debug ^
-      --bandwidth 6.0
-
-### 8.2 Extract Full Tokens
-
-    python codec\extract_encodec_tokens.py ^
-      --filelist data\train.txt ^
-      --output_dir tokens\encodec\train ^
-      --bandwidth 6.0
-
-    python codec\extract_encodec_tokens.py ^
-      --filelist data\valid.txt ^
-      --output_dir tokens\encodec\valid ^
-      --bandwidth 6.0
-
-    python codec\extract_encodec_tokens.py ^
-      --filelist data\test.txt ^
-      --output_dir tokens\encodec\test ^
-      --bandwidth 6.0
-
-Each saved `.pt` token file contains information similar to:
-
-    {
-        "tokens": tokens,
-        "sample_rate": 24000,
-        "wav_path": original_wav_path,
-        "num_codebooks": num_codebooks,
-        "num_frames": num_frames
-    }
-
----
-
-## 9. Train EnCodec Transformer Language Model
-
-The main EnCodec small model predicts only the first EnCodec codebook. This design was used to reduce GPU memory usage and make training feasible on an RTX 2060.
-
-During generation, the remaining future codebooks are filled using a repeat-last strategy.
-
-### 9.1 Debug Training
-
-    python train.py ^
-      --train_token_dir tokens\encodec\train_debug ^
-      --valid_token_dir tokens\encodec\valid_debug ^
-      --output_dir checkpoints\encodec_debug ^
-      --vocab_size 1024 ^
-      --seq_len 256 ^
-      --batch_size 8 ^
-      --epochs 3 ^
-      --d_model 128 ^
-      --n_heads 4 ^
-      --n_layers 2 ^
-      --ffn_dim 512 ^
-      --lr 0.0003 ^
-      --seed 42
-
-Expected output files:
-
-    checkpoints/encodec_debug/best.pt
-    logs/encodec_debug_train_log.csv
-
-### 9.2 Full EnCodec Small Training
-
-    python train.py ^
-      --train_token_dir tokens\encodec\train ^
-      --valid_token_dir tokens\encodec\valid ^
-      --output_dir checkpoints\encodec_small ^
-      --vocab_size 1024 ^
-      --seq_len 512 ^
-      --batch_size 8 ^
-      --epochs 20 ^
-      --d_model 256 ^
-      --n_heads 4 ^
-      --n_layers 4 ^
-      --ffn_dim 1024 ^
-      --lr 0.0003 ^
-      --seed 42
-
-Main model configuration:
+The EnCodec small model is a decoder-only causal Transformer trained with next-token prediction.
 
 | Parameter | Value |
 |---|---:|
@@ -343,221 +159,20 @@ Main model configuration:
 | FFN dimension | 1024 |
 | Learning rate | 0.0003 |
 | Parameters | 3.81M |
-| Best epoch | 18 |
 | Best validation loss | 2.4869 |
-| Best validation PPL | 12.0237 |
+| Best validation perplexity | 12.0237 |
 
-The best checkpoint is saved as:
-
-    checkpoints/encodec_small/best.pt
+The model is trained using cross-entropy loss for autoregressive next-token prediction.
 
 ---
 
-## 10. Generate Future Speech
+### FACodec Analysis
 
-Generation uses the first 2 seconds as context and predicts the 2s--3s future segment.
+FACodec produces six factorized codebook streams. This project trains one Transformer language model independently for each codebook.
 
-The output folders contain:
+The FACodec per-codebook results are:
 
-    generated/SYSTEM_NAME/pred/
-    generated/SYSTEM_NAME/ref/
-    generated/SYSTEM_NAME/full/
-
-where:
-
-- `pred/` contains predicted future 1-second audio
-- `ref/` contains ground-truth future 1-second audio
-- `full/` contains reconstructed full audio where applicable
-
-### 10.1 Generate Debug Predictions
-
-    python generate.py ^
-      --checkpoint checkpoints\encodec_debug\best.pt ^
-      --test_filelist data\test_debug.txt ^
-      --output_dir generated\encodec_debug ^
-      --context_sec 2.0 ^
-      --pred_sec 1.0 ^
-      --sample_rate 24000 ^
-      --greedy ^
-      --fill_strategy repeat_last
-
-### 10.2 Generate EnCodec Small Predictions
-
-    python generate.py ^
-      --checkpoint checkpoints\encodec_small\best.pt ^
-      --test_filelist data\test.txt ^
-      --output_dir generated\encodec_small ^
-      --context_sec 2.0 ^
-      --pred_sec 1.0 ^
-      --sample_rate 24000 ^
-      --greedy ^
-      --fill_strategy repeat_last
-
-### 10.3 Generate EnCodec Top-k20 Predictions
-
-    python generate.py ^
-      --checkpoint checkpoints\encodec_small\best.pt ^
-      --test_filelist data\test.txt ^
-      --output_dir generated\encodec_topk20 ^
-      --context_sec 2.0 ^
-      --pred_sec 1.0 ^
-      --sample_rate 24000 ^
-      --temperature 0.8 ^
-      --top_k 20 ^
-      --fill_strategy repeat_last
-
----
-
-## 11. Run Baselines and Oracle Reconstruction
-
-### 11.1 Copy Baseline
-
-The copy baseline copies the 1s--2s context segment as the predicted 2s--3s future segment.
-
-    python evaluate_copy_baseline.py ^
-      --test_filelist data\test.txt ^
-      --output_dir generated\copy_baseline ^
-      --out_csv outputs\copy_baseline_results.csv ^
-      --context_sec 2.0 ^
-      --pred_sec 1.0 ^
-      --eval_sample_rate 16000
-
-### 11.2 EnCodec Oracle Reconstruction
-
-The EnCodec oracle system encodes and decodes the ground-truth waveform. It estimates the reconstruction upper bound of the codec.
-
-    python evaluate_oracle.py ^
-      --codec encodec ^
-      --test_filelist data\test.txt ^
-      --output_dir generated\encodec_oracle ^
-      --out_csv outputs\encodec_oracle_results.csv ^
-      --context_sec 2.0 ^
-      --pred_sec 1.0 ^
-      --eval_sample_rate 16000
-
----
-
-## 12. Evaluate STOI and PESQ
-
-STOI and PESQ are computed between the predicted future speech and the reference future speech.
-
-Before metric computation:
-
-- prediction and reference waveforms are loaded
-- both signals are resampled to 16 kHz
-- both signals are truncated or padded to the same length
-- STOI and PESQ are computed
-
-### 12.1 Evaluate EnCodec Debug
-
-    python evaluate.py ^
-      --pred_dir generated\encodec_debug\pred ^
-      --ref_dir generated\encodec_debug\ref ^
-      --out_csv outputs\encodec_debug_results.csv ^
-      --eval_sample_rate 16000
-
-### 12.2 Evaluate EnCodec Small
-
-    python evaluate.py ^
-      --pred_dir generated\encodec_small\pred ^
-      --ref_dir generated\encodec_small\ref ^
-      --out_csv outputs\encodec_small_results.csv ^
-      --eval_sample_rate 16000
-
-### 12.3 Evaluate EnCodec Top-k20
-
-    python evaluate.py ^
-      --pred_dir generated\encodec_topk20\pred ^
-      --ref_dir generated\encodec_topk20\ref ^
-      --out_csv outputs\encodec_topk20_results.csv ^
-      --eval_sample_rate 16000
-
-The main STOI/PESQ result files are:
-
-    outputs/copy_baseline_results.csv
-    outputs/encodec_oracle_results.csv
-    outputs/encodec_small_results.csv
-    outputs/encodec_topk20_results.csv
-
----
-
-## 13. Compute DNSMOS
-
-DNSMOS is computed separately using `compute_dnsmos.py`.
-
-DNSMOS is a no-reference metric, so it only requires predicted waveforms. Since each predicted future segment is only 1 second long, the waveform is repeated internally to satisfy the minimum DNSMOS inference window.
-
-The script evaluates the following systems:
-
-    generated/copy_baseline/pred
-    generated/encodec_oracle/pred
-    generated/encodec_small/pred
-    generated/encodec_topk20/pred
-
-### 13.1 Compute DNSMOS for EnCodec Small Only
-
-    python compute_dnsmos.py --system encodec_small
-
-Expected output:
-
-    outputs/encodec_small_dnsmos_per_file.csv
-    outputs/encodec_small_dnsmos_summary.csv
-
-Final EnCodec small DNSMOS result:
-
-    mos_ovr_mean = 1.485178
-
-### 13.2 Compute DNSMOS for All Main Systems
-
-    python compute_dnsmos.py --system all
-
-Expected output:
-
-    outputs/copy_baseline_dnsmos_per_file.csv
-    outputs/copy_baseline_dnsmos_summary.csv
-    outputs/encodec_oracle_dnsmos_per_file.csv
-    outputs/encodec_oracle_dnsmos_summary.csv
-    outputs/encodec_small_dnsmos_per_file.csv
-    outputs/encodec_small_dnsmos_summary.csv
-    outputs/encodec_topk20_dnsmos_per_file.csv
-    outputs/encodec_topk20_dnsmos_summary.csv
-    outputs/dnsmos_all_systems_summary.csv
-
-Final DNSMOS summary:
-
-| System | # Valid Files | P.808 MOS | SIG | BAK | OVRL |
-|---|---:|---:|---:|---:|---:|
-| copy_baseline | 644 | 2.930 | 3.052 | 3.219 | 2.480 |
-| encodec_oracle | 644 | 2.796 | 2.615 | 2.906 | 2.071 |
-| encodec_small | 644 | 2.358 | 1.873 | 2.040 | 1.485 |
-| encodec_topk20 | 644 | 2.446 | 2.015 | 2.413 | 1.618 |
-
-The final report uses the DNSMOS **OVRL** score.
-
----
-
-## 14. FACodec Experiments
-
-FACodec was used for codec comparison and per-codebook language modeling analysis.
-
-### 14.1 FACodec Oracle Reconstruction
-
-FACodec oracle reconstruction was evaluated on a 16-utterance subset.
-
-The comparison between EnCodec and FACodec oracle reconstruction is:
-
-| Codec | MSE | SNR | SI-SDR | Time |
-|---|---:|---:|---:|---:|
-| EnCodec | 8.44e-5 | 3.618 | 2.072 | 0.111 s/item |
-| FACodec | 1.03e-4 | 2.514 | -0.197 | 0.329 s/item |
-
-This experiment evaluates codec reconstruction quality rather than future prediction quality.
-
-### 14.2 FACodec Per-codebook Transformer LM
-
-Six separate Transformer language models were trained, one for each FACodec codebook.
-
-| CB | Best Epoch | Best Loss | Best PPL | Final Loss |
+| Codebook | Best Epoch | Best Loss | Best PPL | Final Loss |
 |---:|---:|---:|---:|---:|
 | 0 | 19 | 3.954 | 52.13 | 3.956 |
 | 1 | 20 | 2.809 | 16.59 | 2.809 |
@@ -566,242 +181,417 @@ Six separate Transformer language models were trained, one for each FACodec code
 | 4 | 14 | 5.754 | 315.60 | 5.772 |
 | 5 | 13 | 5.567 | 261.53 | 5.589 |
 
-Main observation:
+### FACodec Findings
 
 - Codebook 1 is the easiest to model.
 - Codebook 0 is also relatively predictable.
 - Codebooks 3, 4, and 5 are much harder to predict.
-- Later FACodec codebooks likely contain higher-entropy residual acoustic information.
+- Later codebooks likely contain higher-entropy residual acoustic information.
+- Future systems should consider hierarchical or conditional multi-codebook generation.
 
 ---
 
-## 15. Larger EnCodec Medium Model
+## Codec Oracle Reconstruction
 
-A larger EnCodec medium Transformer LM was also trained on Kaggle using a 644-utterance subset.
+Oracle reconstruction evaluates codec reconstruction quality rather than future prediction quality.
 
-Configuration:
+The codec receives the ground-truth waveform, encodes it into tokens, and decodes it back into waveform.
 
-| Parameter | Value |
-|---|---:|
-| Training utterances | 580 |
-| Validation utterances | 64 |
-| Transformer layers | 6 |
-| Attention heads | 6 |
-| Hidden dimension | 384 |
-| FFN dimension | 1536 |
-| Sequence length | 768 |
-| Batch size | 8 |
-| Parameters | 11.73M |
-| Best epoch | 15 |
-| Best validation loss | 2.158 |
-| Best validation PPL | 8.654 |
+| Codec | MSE | SNR | SI-SDR | Time |
+|---|---:|---:|---:|---:|
+| EnCodec | 8.44e-5 | 3.618 | 2.072 | 0.111 s/item |
+| FACodec | 1.03e-4 | 2.514 | -0.197 | 0.329 s/item |
 
-This model was reported as a training extension. Full waveform-level generation and STOI/PESQ/DNSMOS evaluation were not completed for the medium checkpoint.
+On the evaluated subset, EnCodec provides stronger reconstruction quality and faster inference than FACodec.
 
 ---
 
-## 16. Reproduce the Final Report Results
+## Installation
 
-To reproduce the main final results, run the following steps in order.
+### 1. Create Environment
 
-### Step 1: Prepare Filelists
+```bash
+conda create -n speech_pred python=3.10 -y
+conda activate speech_pred
+```
 
-    python data\prepare_filelist.py ^
-      --wav_dir E:\Working\deep-learning\datasets\wsjcam0_wavs ^
-      --out_dir data ^
-      --min_duration 3.0 ^
-      --train_ratio 0.8 ^
-      --valid_ratio 0.1 ^
-      --test_ratio 0.1 ^
-      --seed 42
+### 2. Install PyTorch
 
-### Step 2: Extract EnCodec Tokens
+For CUDA 11.8:
 
-    python codec\extract_encodec_tokens.py ^
-      --filelist data\train.txt ^
-      --output_dir tokens\encodec\train ^
-      --bandwidth 6.0
+```bash
+pip install torch torchaudio torchvision --index-url https://download.pytorch.org/whl/cu118
+```
 
-    python codec\extract_encodec_tokens.py ^
-      --filelist data\valid.txt ^
-      --output_dir tokens\encodec\valid ^
-      --bandwidth 6.0
+For CPU-only environments:
 
-    python codec\extract_encodec_tokens.py ^
-      --filelist data\test.txt ^
-      --output_dir tokens\encodec\test ^
-      --bandwidth 6.0
+```bash
+pip install torch torchaudio torchvision
+```
 
-### Step 3: Train EnCodec Small Transformer LM
+### 3. Install Dependencies
 
-    python train.py ^
-      --train_token_dir tokens\encodec\train ^
-      --valid_token_dir tokens\encodec\valid ^
-      --output_dir checkpoints\encodec_small ^
-      --vocab_size 1024 ^
-      --seq_len 512 ^
-      --batch_size 8 ^
-      --epochs 20 ^
-      --d_model 256 ^
-      --n_heads 4 ^
-      --n_layers 4 ^
-      --ffn_dim 1024 ^
-      --lr 0.0003 ^
-      --seed 42
+```bash
+pip install -r requirements.txt
+```
 
-### Step 4: Generate EnCodec Small Predictions
+Main dependencies include:
 
-    python generate.py ^
-      --checkpoint checkpoints\encodec_small\best.pt ^
-      --test_filelist data\test.txt ^
-      --output_dir generated\encodec_small ^
-      --context_sec 2.0 ^
-      --pred_sec 1.0 ^
-      --sample_rate 24000 ^
-      --greedy ^
-      --fill_strategy repeat_last
-
-### Step 5: Generate Top-k20 Predictions
-
-    python generate.py ^
-      --checkpoint checkpoints\encodec_small\best.pt ^
-      --test_filelist data\test.txt ^
-      --output_dir generated\encodec_topk20 ^
-      --context_sec 2.0 ^
-      --pred_sec 1.0 ^
-      --sample_rate 24000 ^
-      --temperature 0.8 ^
-      --top_k 20 ^
-      --fill_strategy repeat_last
-
-### Step 6: Run Copy Baseline
-
-    python evaluate_copy_baseline.py ^
-      --test_filelist data\test.txt ^
-      --output_dir generated\copy_baseline ^
-      --out_csv outputs\copy_baseline_results.csv ^
-      --context_sec 2.0 ^
-      --pred_sec 1.0 ^
-      --eval_sample_rate 16000
-
-### Step 7: Run EnCodec Oracle Reconstruction
-
-    python evaluate_oracle.py ^
-      --codec encodec ^
-      --test_filelist data\test.txt ^
-      --output_dir generated\encodec_oracle ^
-      --out_csv outputs\encodec_oracle_results.csv ^
-      --context_sec 2.0 ^
-      --pred_sec 1.0 ^
-      --eval_sample_rate 16000
-
-### Step 8: Compute STOI and PESQ
-
-    python evaluate.py ^
-      --pred_dir generated\encodec_small\pred ^
-      --ref_dir generated\encodec_small\ref ^
-      --out_csv outputs\encodec_small_results.csv ^
-      --eval_sample_rate 16000
-
-    python evaluate.py ^
-      --pred_dir generated\encodec_topk20\pred ^
-      --ref_dir generated\encodec_topk20\ref ^
-      --out_csv outputs\encodec_topk20_results.csv ^
-      --eval_sample_rate 16000
-
-### Step 9: Compute DNSMOS
-
-    python compute_dnsmos.py --system all
-
-The combined DNSMOS result will be saved to:
-
-    outputs/dnsmos_all_systems_summary.csv
+- PyTorch
+- torchaudio
+- EnCodec
+- librosa
+- soundfile
+- tqdm
+- pandas
+- matplotlib
+- pystoi
+- pesq
+- torchmetrics
+- onnxruntime
 
 ---
 
-## 17. Notes on Evaluation
+## Dataset Preparation
 
-### 17.1 STOI and PESQ
+The experiments are designed for WSJ-style speech datasets or other clean speech datasets.
 
-STOI and PESQ are reference-based metrics. They compare the predicted 2s--3s segment with the true 2s--3s future segment.
+Place waveform files under a local dataset directory. The directory may contain nested speaker folders.
 
-Before evaluation:
+Only utterances with duration of at least 3 seconds are used, because each sample requires:
 
-- prediction and reference waveforms are loaded
-- both are resampled to 16 kHz
-- both are aligned to the same length
-- STOI and PESQ are computed
+- 2 seconds of context speech
+- 1 second of future reference speech
 
-### 17.2 DNSMOS
+Generate train / validation / test filelists:
 
-DNSMOS is a no-reference metric. It does not compare the generated speech with the ground-truth future speech.
+```bash
+python data/prepare_filelist.py \
+  --wav_dir /path/to/wav_dataset \
+  --out_dir data \
+  --min_duration 3.0 \
+  --train_ratio 0.8 \
+  --valid_ratio 0.1 \
+  --test_ratio 0.1 \
+  --seed 42
+```
 
-Because the predicted future segment is only 1 second long, each waveform is repeated to satisfy the DNSMOS inference window.
+This creates:
 
-This explains why the copy baseline can have the highest DNSMOS:
-
-- It copies a real speech waveform from the previous context.
-- The copied waveform sounds natural.
-- But it does not match the true future segment.
-- Therefore, it has high DNSMOS but low STOI and PESQ.
-
----
-
-## 18. Limitations
-
-The current implementation has several limitations:
-
-1. The main EnCodec LM predicts only the first codebook.
-2. The remaining EnCodec codebooks are filled using a repeat-last heuristic.
-3. The system is lightweight and reproducible, but waveform quality is limited.
-4. Full multi-codebook EnCodec prediction was not completed.
-5. Full FACodec waveform-level future prediction was not completed.
-6. The larger EnCodec medium model was trained, but full waveform generation and metric evaluation were not completed.
-
-These limitations are discussed in the final report.
+```text
+data/train.txt
+data/valid.txt
+data/test.txt
+```
 
 ---
 
-## 19. Expected Submitted Files
+## Token Extraction
 
-The final Blackboard submission should include:
+Extract EnCodec tokens for each split:
 
-    report.pdf
-    README.md
-    requirements.txt
-    train.py
-    generate.py
-    evaluate.py
-    evaluate_copy_baseline.py
-    evaluate_oracle.py
-    compute_dnsmos.py
-    codec/
-    data/
-    models/
-    utils/
-    outputs/
-    logs/
+```bash
+python codec/extract_encodec_tokens.py \
+  --filelist data/train.txt \
+  --output_dir tokens/encodec/train \
+  --bandwidth 6.0
+```
 
-Large raw datasets should not be included.
+```bash
+python codec/extract_encodec_tokens.py \
+  --filelist data/valid.txt \
+  --output_dir tokens/encodec/valid \
+  --bandwidth 6.0
+```
 
-Large checkpoints may be excluded if the README provides the training commands needed to reproduce them.
+```bash
+python codec/extract_encodec_tokens.py \
+  --filelist data/test.txt \
+  --output_dir tokens/encodec/test \
+  --bandwidth 6.0
+```
 
----
-
-## 20. Academic Integrity Statement
-
-Parts of the implementation plan, debugging process, and report organization were assisted by online documentation and AI-based tools. All experiments, final results, analyses, and interpretations were verified and organized by the author.
+Each token file stores codec token information, sample rate, source path, number of codebooks, and number of frames.
 
 ---
 
-## 21. Contact / Reproducibility Notes
+## Training
 
-This README is intended to reproduce the reported EnCodec main experiments, baseline systems, DNSMOS evaluation, and FACodec analysis results.
+Train the EnCodec small Transformer language model:
 
-If the exact dataset path differs from the examples above, replace:
+```bash
+python scripts/train.py \
+  --train_token_dir tokens/encodec/train \
+  --valid_token_dir tokens/encodec/valid \
+  --output_dir checkpoints/encodec_small \
+  --vocab_size 1024 \
+  --seq_len 512 \
+  --batch_size 8 \
+  --epochs 20 \
+  --d_model 256 \
+  --n_heads 4 \
+  --n_layers 4 \
+  --ffn_dim 1024 \
+  --lr 0.0003 \
+  --seed 42
+```
 
-    E:\Working\deep-learning\datasets\wsjcam0_wavs
+The best checkpoint is saved as:
 
-with the local path to the WSJCAM0 or WSJ0 waveform directory.
+```text
+checkpoints/encodec_small/best.pt
+```
 
-For Windows PowerShell or Anaconda Prompt, the command continuation symbol `^` is used. On Linux or Kaggle, replace `^` with `\`.
+---
+
+## Generation
+
+Generate future speech using greedy decoding:
+
+```bash
+python scripts/generate.py \
+  --checkpoint checkpoints/encodec_small/best.pt \
+  --test_filelist data/test.txt \
+  --output_dir generated/encodec_small \
+  --context_sec 2.0 \
+  --pred_sec 1.0 \
+  --sample_rate 24000 \
+  --greedy \
+  --fill_strategy repeat_last
+```
+
+Generate with top-k sampling:
+
+```bash
+python scripts/generate.py \
+  --checkpoint checkpoints/encodec_small/best.pt \
+  --test_filelist data/test.txt \
+  --output_dir generated/encodec_topk20 \
+  --context_sec 2.0 \
+  --pred_sec 1.0 \
+  --sample_rate 24000 \
+  --temperature 0.8 \
+  --top_k 20 \
+  --fill_strategy repeat_last
+```
+
+Generated outputs are stored in:
+
+```text
+generated/SYSTEM_NAME/pred/
+generated/SYSTEM_NAME/ref/
+generated/SYSTEM_NAME/full/
+```
+
+---
+
+## Baselines and Oracle Systems
+
+### Copy Baseline
+
+The copy baseline copies the 1s–2s context segment as the predicted 2s–3s future segment.
+
+```bash
+python scripts/evaluate_copy_baseline.py \
+  --test_filelist data/test.txt \
+  --output_dir generated/copy_baseline \
+  --out_csv outputs/copy_baseline_results.csv \
+  --context_sec 2.0 \
+  --pred_sec 1.0 \
+  --eval_sample_rate 16000
+```
+
+### EnCodec Oracle
+
+The EnCodec oracle encodes and decodes the ground-truth waveform to estimate codec reconstruction upper-bound quality.
+
+```bash
+python scripts/evaluate_oracle.py \
+  --codec encodec \
+  --test_filelist data/test.txt \
+  --output_dir generated/encodec_oracle \
+  --out_csv outputs/encodec_oracle_results.csv \
+  --context_sec 2.0 \
+  --pred_sec 1.0 \
+  --eval_sample_rate 16000
+```
+
+---
+
+## Evaluation
+
+### STOI and PESQ
+
+Evaluate generated future speech against the reference future segment:
+
+```bash
+python scripts/evaluate.py \
+  --pred_dir generated/encodec_small/pred \
+  --ref_dir generated/encodec_small/ref \
+  --out_csv outputs/encodec_small_results.csv \
+  --eval_sample_rate 16000
+```
+
+For top-k generation:
+
+```bash
+python scripts/evaluate.py \
+  --pred_dir generated/encodec_topk20/pred \
+  --ref_dir generated/encodec_topk20/ref \
+  --out_csv outputs/encodec_topk20_results.csv \
+  --eval_sample_rate 16000
+```
+
+### DNSMOS
+
+Compute DNSMOS for all main systems:
+
+```bash
+python scripts/compute_dnsmos.py --system all
+```
+
+The final DNSMOS summary is saved to:
+
+```text
+outputs/dnsmos_all_systems_summary.csv
+```
+
+---
+
+## Reproducing Main Results
+
+A typical reproduction workflow is:
+
+```bash
+# 1. Prepare filelists
+python data/prepare_filelist.py \
+  --wav_dir /path/to/wav_dataset \
+  --out_dir data \
+  --min_duration 3.0 \
+  --train_ratio 0.8 \
+  --valid_ratio 0.1 \
+  --test_ratio 0.1 \
+  --seed 42
+
+# 2. Extract codec tokens
+python codec/extract_encodec_tokens.py \
+  --filelist data/train.txt \
+  --output_dir tokens/encodec/train \
+  --bandwidth 6.0
+
+python codec/extract_encodec_tokens.py \
+  --filelist data/valid.txt \
+  --output_dir tokens/encodec/valid \
+  --bandwidth 6.0
+
+python codec/extract_encodec_tokens.py \
+  --filelist data/test.txt \
+  --output_dir tokens/encodec/test \
+  --bandwidth 6.0
+
+# 3. Train model
+python scripts/train.py \
+  --train_token_dir tokens/encodec/train \
+  --valid_token_dir tokens/encodec/valid \
+  --output_dir checkpoints/encodec_small \
+  --vocab_size 1024 \
+  --seq_len 512 \
+  --batch_size 8 \
+  --epochs 20 \
+  --d_model 256 \
+  --n_heads 4 \
+  --n_layers 4 \
+  --ffn_dim 1024 \
+  --lr 0.0003 \
+  --seed 42
+
+# 4. Generate future speech
+python scripts/generate.py \
+  --checkpoint checkpoints/encodec_small/best.pt \
+  --test_filelist data/test.txt \
+  --output_dir generated/encodec_small \
+  --context_sec 2.0 \
+  --pred_sec 1.0 \
+  --sample_rate 24000 \
+  --greedy \
+  --fill_strategy repeat_last
+
+# 5. Evaluate STOI/PESQ
+python scripts/evaluate.py \
+  --pred_dir generated/encodec_small/pred \
+  --ref_dir generated/encodec_small/ref \
+  --out_csv outputs/encodec_small_results.csv \
+  --eval_sample_rate 16000
+
+# 6. Compute DNSMOS
+python scripts/compute_dnsmos.py --system all
+```
+
+---
+
+## Evaluation Notes
+
+### STOI and PESQ
+
+STOI and PESQ are reference-based metrics. They compare the predicted 2s–3s future segment with the true 2s–3s future segment.
+
+Before metric computation:
+
+- Prediction and reference waveforms are loaded.
+- Both are resampled to 16 kHz.
+- Both are truncated or padded to the same length.
+- STOI and PESQ are computed.
+
+### DNSMOS
+
+DNSMOS is a no-reference metric. It evaluates perceptual speech quality without comparing against the ground-truth future segment.
+
+This means that a copied real speech segment may receive a high DNSMOS score even if it does not match the true future speech.
+
+---
+
+## Limitations
+
+The current implementation is intentionally lightweight and has several limitations:
+
+- The main EnCodec model predicts only the first codebook.
+- Remaining codebooks are filled using a repeat-last heuristic.
+- Full multi-codebook EnCodec prediction is not implemented.
+- Full FACodec future waveform prediction is not implemented.
+- The larger EnCodec medium model was trained, but full waveform-level evaluation was not completed.
+- Objective metrics may not fully capture semantic or perceptual continuity of predicted speech.
+
+---
+
+## Future Work
+
+Potential extensions include:
+
+- Joint prediction of all EnCodec codebooks
+- Hierarchical multi-codebook generation
+- Conditional prediction of residual codebooks
+- Better sampling and decoding strategies
+- Longer-context and longer-horizon speech prediction
+- Speaker-conditioned future speech modeling
+- Subjective listening evaluation
+- Comparison with diffusion-based speech continuation models
+
+---
+
+## Notes on Repository Contents
+
+This repository excludes large or non-redistributable files, including:
+
+- Raw speech datasets
+- Generated waveform files
+- Codec token caches
+- Model checkpoints
+- Large temporary experiment artifacts
+
+These files can be regenerated using the scripts provided in the repository.
+
+---
+
+## License
+
+This repository is intended for research and educational use.
