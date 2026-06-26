@@ -1,0 +1,116 @@
+{
+  "codec": "encodec",
+  "mode": "oracle_reconstruction",
+  "test_list": "/kaggle/working/speech_prediction_project/data/kaggle_lists/test_wavs_small16.txt",
+  "num_items": 16,
+  "num_success": 16,
+  "num_failed": 0,
+  "recon_dir": "/kaggle/working/speech_prediction_project/outputs/encodec_oracle_small16_recons",
+  "results_csv": "/kaggle/working/speech_prediction_project/outputs/encodec_oracle_small16_results.csv",
+  "summary_json": "/kaggle/working/speech_prediction_project/outputs/encodec_oracle_small16_summary.json",
+  "total_elapsed_sec": 1.9040451049804688,
+  "sample_rate": 24000,
+  "implementation": "native_model_encode_decode",
+  "bandwidth": 6.0,
+  "metrics": {
+    "duration_sec": {
+      "mean": 8.266677083333333,
+      "std": 3.0513524767182303,
+      "min": 4.453458333333334,
+      "median": 8.712020833333334,
+      "max": 12.335333333333333
+    },
+    "mse": {
+      "mean": 8.436448479187675e-05,
+      "std": 4.253254075280941e-05,
+      "min": 3.889410072588362e-05,
+      "median": 6.987405140534975e-05,
+      "max": 0.0001777988945832476
+    },
+    "mae": {
+      "mean": 0.004830275735002942,
+      "std": 0.0009063814079815141,
+      "min": 0.0035713317338377237,
+      "median": 0.0046316590160131454,
+      "max": 0.0070594241842627525
+    },
+    "rmse": {
+      "mean": 0.008937299581215408,
+      "std": 0.0021187640235485476,
+      "min": 0.006236513507231714,
+      "median": 0.00835887345399964,
+      "max": 0.013334125190024564
+    },
+    "snr_db": {
+      "mean": 3.6176014724256014,
+      "std": 0.7054103717945043,
+      "min": 2.107588328047764,
+      "median": 3.570707970013567,
+      "max": 4.797502638723183
+    },
+    "si_sdr_db": {
+      "mean": 2.0716766896657646,
+      "std": 1.0189967364992327,
+      "min": -0.207589752972126,
+      "median": 1.977396085858345,
+      "max": 3.6727380752563477
+    },
+    "ref_rms": {
+      "mean": 0.01346720219598171,
+      "std": 0.002784828615854933,
+      "min": 0.010230559758183636,
+      "median": 0.012965704463914405,
+      "max": 0.02063824624775248
+    },
+    "est_rms": {
+      "mean": 0.01371705926089252,
+      "std": 0.002916762321713158,
+      "min": 0.010247868841513174,
+      "median": 0.013155564739755333,
+      "max": 0.02144965706858627
+    },
+    "ref_peak": {
+      "mean": 0.16978953639045358,
+      "std": 0.048219151088065605,
+      "min": 0.11503233760595322,
+      "median": 0.1555226668715477,
+      "max": 0.27816087007522583
+    },
+    "est_peak": {
+      "mean": 0.18243083963170648,
+      "std": 0.05145105647885626,
+      "min": 0.12296789884567261,
+      "median": 0.17263589054346085,
+      "max": 0.29686421155929565
+    },
+    "num_chunks": {
+      "mean": 1.0,
+      "std": 0.0,
+      "min": 1.0,
+      "median": 1.0,
+      "max": 1.0
+    },
+    "num_codebooks": {
+      "mean": 8.0,
+      "std": 0.0,
+      "min": 8.0,
+      "median": 8.0,
+      "max": 8.0
+    },
+    "num_frames": {
+      "mean": 620.5,
+      "std": 228.81187687705375,
+      "min": 335.0,
+      "median": 654.0,
+      "max": 926.0
+    },
+    "elapsed_sec": {
+      "mean": 0.11119543015956879,
+      "std": 0.03276095679095065,
+      "min": 0.06962203979492188,
+      "median": 0.11365485191345215,
+      "max": 0.1671276092529297
+    }
+  },
+  "failed": []
+}

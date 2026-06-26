@@ -1,0 +1,100 @@
+{
+  "codec": "facodec",
+  "mode": "oracle_reconstruction",
+  "test_list": "/kaggle/working/speech_prediction_project/data/kaggle_lists/test_wavs_small16.txt",
+  "num_items": 16,
+  "num_success": 16,
+  "num_failed": 0,
+  "recon_dir": "/kaggle/working/speech_prediction_project/outputs/facodec_oracle_small16_recons",
+  "results_csv": "/kaggle/working/speech_prediction_project/outputs/facodec_oracle_small16_results.csv",
+  "summary_json": "/kaggle/working/speech_prediction_project/outputs/facodec_oracle_small16_summary.json",
+  "total_elapsed_sec": 5.445383071899414,
+  "sample_rate": 16000,
+  "metrics": {
+    "duration_sec": {
+      "mean": 8.26666796875,
+      "std": 3.0513508845371744,
+      "min": 4.4534375,
+      "median": 8.712,
+      "max": 12.3353125
+    },
+    "mse": {
+      "mean": 0.00010302687496732688,
+      "std": 3.379825637540707e-05,
+      "min": 5.793852324131876e-05,
+      "median": 9.623950973036699e-05,
+      "max": 0.0001825969957280904
+    },
+    "mae": {
+      "mean": 0.005826700566103682,
+      "std": 0.0008625870346178432,
+      "min": 0.003948580008000135,
+      "median": 0.006142395548522472,
+      "max": 0.006848448887467384
+    },
+    "rmse": {
+      "mean": 0.010025643433773702,
+      "std": 0.0015853544418069868,
+      "min": 0.00761173588883106,
+      "median": 0.009810172392597741,
+      "max": 0.013512845582189209
+    },
+    "snr_db": {
+      "mean": 2.5138530906410343,
+      "std": 0.6688325671931945,
+      "min": 1.7375132033723144,
+      "median": 2.3199182159574323,
+      "max": 4.151084169612348
+    },
+    "si_sdr_db": {
+      "mean": -0.19668416440254077,
+      "std": 1.2404567128883062,
+      "min": -2.0300868153572083,
+      "median": -0.5161529220640659,
+      "max": 2.7460846304893494
+    },
+    "ref_rms": {
+      "mean": 0.013486208269563371,
+      "std": 0.0027833766842519435,
+      "min": 0.010237695212446789,
+      "median": 0.012986959270568275,
+      "max": 0.020650072231022387
+    },
+    "est_rms": {
+      "mean": 0.012606207666792664,
+      "std": 0.003121555458718752,
+      "min": 0.008710824302492828,
+      "median": 0.011956764861367722,
+      "max": 0.020685513836019218
+    },
+    "ref_peak": {
+      "mean": 0.16924095153808594,
+      "std": 0.046802581187302565,
+      "min": 0.11505126953125,
+      "median": 0.1561126708984375,
+      "max": 0.267242431640625
+    },
+    "est_peak": {
+      "mean": 0.15486114704981446,
+      "std": 0.04027795937055524,
+      "min": 0.10442014783620834,
+      "median": 0.1377950757741928,
+      "max": 0.24289406836032867
+    },
+    "num_frames": {
+      "mean": 661.6875,
+      "std": 244.09442812925903,
+      "min": 357.0,
+      "median": 697.5,
+      "max": 987.0
+    },
+    "elapsed_sec": {
+      "mean": 0.32885321974754333,
+      "std": 0.11045599257313186,
+      "min": 0.17447137832641602,
+      "median": 0.3414292335510254,
+      "max": 0.47748589515686035
+    }
+  },
+  "failed": []
+}

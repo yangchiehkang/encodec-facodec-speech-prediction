@@ -1,0 +1,20 @@
+{
+  "codec": "encodec",
+  "test_filelist": "data\\test.txt",
+  "output_dir": "generated\\encodec_oracle",
+  "pred_dir": "generated\\encodec_oracle\\pred",
+  "ref_dir": "generated\\encodec_oracle\\ref",
+  "eval_sr": 16000,
+  "codec_sample_rate": 24000,
+  "bandwidth": 6.0,
+  "context_sec": 2.0,
+  "pred_sec": 1.0,
+  "num_total": 644,
+  "num_valid": 644,
+  "stoi_mean": 0.9101189329379848,
+  "pesq_mean": 2.5057239819387473,
+  "dnsmos_sig_mean": NaN,
+  "dnsmos_bak_mean": NaN,
+  "dnsmos_ovrl_mean": NaN,
+  "note": "Oracle reconstruction encodes and decodes the ground-truth 0-3s audio with EnCodec, then compares the reconstructed 2-3s segment against the original 2-3s reference. STOI and PESQ are computed after resampling prediction and reference to eval_sr. DNSMOS columns are reserved as NaN unless an external DNSMOS model is integrated."
+}

@@ -1,0 +1,2 @@
+﻿system,wav_dir,num_files_total,num_files_valid,p808_mos_mean,p808_mos_std,mos_sig_mean,mos_sig_std,mos_bak_mean,mos_bak_std,mos_ovr_mean,mos_ovr_std
+encodec_small,E:\Working\deep-learning\speech_prediction_project\generated\encodec_small\pred,644,644,2.358178590765651,0.1365673578828405,1.872837541309337,0.549942673948769,2.040465040457599,0.812696858938518,1.4851777855967039,0.31501113067240827

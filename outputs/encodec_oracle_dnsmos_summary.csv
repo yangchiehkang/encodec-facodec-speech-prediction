@@ -1,0 +1,2 @@
+﻿system,wav_dir,num_files_total,num_files_valid,p808_mos_mean,p808_mos_std,mos_sig_mean,mos_sig_std,mos_bak_mean,mos_bak_std,mos_ovr_mean,mos_ovr_std
+encodec_oracle,E:\Working\deep-learning\speech_prediction_project\generated\encodec_oracle\pred,644,644,2.796189226719163,0.23430497238905576,2.6147719026120564,0.5534344365598282,2.9061084430947024,0.726209117342762,2.0712311748594896,0.4660587963930468

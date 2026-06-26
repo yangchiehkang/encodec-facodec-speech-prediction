@@ -1,0 +1,26 @@
+{
+  "task": "facodec_lm_smoke_training_codebook_format",
+  "return_code": 0,
+  "elapsed_sec": 8.84669542312622,
+  "params": {
+    "train_token_dir": "/kaggle/working/speech_prediction_project/tokens/facodec_codebook/train",
+    "valid_token_dir": "/kaggle/working/speech_prediction_project/tokens/facodec_codebook/valid",
+    "output_dir": "/kaggle/working/speech_prediction_project/checkpoints/facodec_smoke_cb0",
+    "vocab_size": 1024,
+    "seq_len": 512,
+    "batch_size": 16,
+    "epochs": 1,
+    "d_model": 256,
+    "n_heads": 4,
+    "n_layers": 4,
+    "ffn_dim": 1024,
+    "lr": 0.0003,
+    "codebook_idx": 0,
+    "seed": 42
+  },
+  "log_path": "/kaggle/working/speech_prediction_project/outputs/facodec_lm_smoke_cb0_train.log",
+  "output_dir": "/kaggle/working/speech_prediction_project/checkpoints/facodec_smoke_cb0",
+  "num_output_files": 7,
+  "token_config": "/kaggle/working/speech_prediction_project/tokens/facodec_codebook/facodec_codebook_token_config.json",
+  "token_format": "dict_with_tokens_key_and_tokens_shape_[num_codebooks,num_frames]"
+}

@@ -1,0 +1,51 @@
+{
+  "task": "section_8_2_kaggle_output_csv_check",
+  "outputs_dir": "/kaggle/working/speech_prediction_project/outputs",
+  "required_files": [
+    "facodec_oracle_results.csv",
+    "facodec_lm_results.csv",
+    "encodec_medium_results.csv"
+  ],
+  "missing_files": [
+    "facodec_oracle_results.csv",
+    "facodec_lm_results.csv",
+    "encodec_medium_results.csv"
+  ],
+  "all_exist": false,
+  "all_readable": true,
+  "rows": [
+    {
+      "file": "facodec_oracle_results.csv",
+      "path": "/kaggle/working/speech_prediction_project/outputs/facodec_oracle_results.csv",
+      "exists": false,
+      "size_bytes": null,
+      "size_mb": null,
+      "num_rows": null,
+      "num_cols": null,
+      "columns": null,
+      "readable": false
+    },
+    {
+      "file": "facodec_lm_results.csv",
+      "path": "/kaggle/working/speech_prediction_project/outputs/facodec_lm_results.csv",
+      "exists": false,
+      "size_bytes": null,
+      "size_mb": null,
+      "num_rows": null,
+      "num_cols": null,
+      "columns": null,
+      "readable": false
+    },
+    {
+      "file": "encodec_medium_results.csv",
+      "path": "/kaggle/working/speech_prediction_project/outputs/encodec_medium_results.csv",
+      "exists": false,
+      "size_bytes": null,
+      "size_mb": null,
+      "num_rows": null,
+      "num_cols": null,
+      "columns": null,
+      "readable": false
+    }
+  ]
+}

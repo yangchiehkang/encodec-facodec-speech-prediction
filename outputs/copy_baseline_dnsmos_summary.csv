@@ -1,0 +1,2 @@
+﻿system,wav_dir,num_files_total,num_files_valid,p808_mos_mean,p808_mos_std,mos_sig_mean,mos_sig_std,mos_bak_mean,mos_bak_std,mos_ovr_mean,mos_ovr_std
+copy_baseline,E:\Working\deep-learning\speech_prediction_project\generated\copy_baseline\pred,644,644,2.929971190713207,0.3136455091220134,3.0516724288985433,0.44543702831146886,3.2188894810309554,0.6358242871235419,2.4801417075209864,0.43169227931920956

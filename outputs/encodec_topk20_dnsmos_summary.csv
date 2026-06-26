@@ -1,0 +1,2 @@
+﻿system,wav_dir,num_files_total,num_files_valid,p808_mos_mean,p808_mos_std,mos_sig_mean,mos_sig_std,mos_bak_mean,mos_bak_std,mos_ovr_mean,mos_ovr_std
+encodec_topk20,E:\Working\deep-learning\speech_prediction_project\generated\encodec_topk20\pred,644,644,2.44579943033479,0.19985714369102556,2.0148866631939244,0.5146201681858205,2.4129423476374994,0.8317322032113653,1.6184211125432493,0.3639173935420035

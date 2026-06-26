@@ -1,0 +1,33 @@
+{
+  "task": "facodec_lm_training_codebook_0",
+  "return_code": 0,
+  "elapsed_sec": 93.84971690177917,
+  "elapsed_min": 1.5641619483629863,
+  "params": {
+    "train_token_dir": "/kaggle/working/speech_prediction_project/tokens/facodec_codebook/train",
+    "valid_token_dir": "/kaggle/working/speech_prediction_project/tokens/facodec_codebook/valid",
+    "output_dir": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb0",
+    "vocab_size": 1024,
+    "seq_len": 512,
+    "batch_size": 16,
+    "epochs": 20,
+    "d_model": 256,
+    "n_heads": 4,
+    "n_layers": 4,
+    "ffn_dim": 1024,
+    "lr": 0.0003,
+    "codebook_idx": 0,
+    "seed": 42
+  },
+  "log_path": "/kaggle/working/speech_prediction_project/outputs/facodec_lm_cb0_train.log",
+  "output_dir": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb0",
+  "num_output_files": 26,
+  "token_config": "/kaggle/working/speech_prediction_project/tokens/facodec_codebook/facodec_codebook_token_config.json",
+  "token_format": "dict_with_tokens_key_and_tokens_shape_[num_codebooks,num_frames]",
+  "best_ckpt": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb0/best.pt",
+  "last_ckpt": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb0/last.pt",
+  "train_log_csv": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb0/logs/train_log.csv",
+  "best_ckpt_exists": true,
+  "last_ckpt_exists": true,
+  "train_log_csv_exists": true
+}

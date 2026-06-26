@@ -1,0 +1,85 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+conda-env/
+
+# OS / IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+logs/*.log
+
+# LaTeX generated files
+*.aux
+*.out
+*.synctex.gz
+*.toc
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+
+# Keep source/report files
+!report.tex
+!report.pdf
+!spconf.sty
+
+# Raw speech data / generated audio
+data/raw/
+data/wavs/
+data/**/*.wav
+data/**/*.flac
+data/**/*.mp3
+
+# Token caches
+tokens/
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+
+# Model checkpoints
+checkpoints/
+models/checkpoints/
+runs/
+wandb/
+
+# Generated waveforms
+generated/
+*.wav
+*.flac
+*.mp3
+
+# Large outputs
+outputs/*per_file*.csv
+outputs/*audio*.csv
+
+# Kaggle temporary/upload bundles
+kaggle/
+kaggle_upload/
+
+# Submission package duplicate
+submission_code_Yang Jiekang_225010280/
+
+# Large numpy / arrays
+*.npy
+*.npz
+*.pkl
+*.pickle
+
+# Misc
+*.tmp
+*.bak

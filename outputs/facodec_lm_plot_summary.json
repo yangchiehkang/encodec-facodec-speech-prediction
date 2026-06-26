@@ -1,0 +1,69 @@
+{
+  "task": "facodec_lm_plot_training_curves",
+  "loss_curve_path": "/kaggle/working/speech_prediction_project/outputs/facodec_lm_loss_curves.png",
+  "best_loss_bar_path": "/kaggle/working/speech_prediction_project/outputs/facodec_lm_best_valid_loss_bar.png",
+  "best_ppl_bar_path": "/kaggle/working/speech_prediction_project/outputs/facodec_lm_best_valid_ppl_bar.png",
+  "num_codebooks": 6,
+  "summary": [
+    {
+      "codebook_idx": 0,
+      "best_epoch": 19,
+      "best_valid_loss": 3.9537,
+      "best_valid_ppl": 52.127872,
+      "final_train_loss": 3.835006,
+      "final_valid_loss": 3.956033,
+      "final_train_ppl": 46.293713,
+      "final_valid_ppl": 52.24963
+    },
+    {
+      "codebook_idx": 1,
+      "best_epoch": 20,
+      "best_valid_loss": 2.808983,
+      "best_valid_ppl": 16.593034,
+      "final_train_loss": 2.737154,
+      "final_valid_loss": 2.808983,
+      "final_train_ppl": 15.442977,
+      "final_valid_ppl": 16.593034
+    },
+    {
+      "codebook_idx": 2,
+      "best_epoch": 16,
+      "best_valid_loss": 4.947916,
+      "best_valid_ppl": 140.881066,
+      "final_train_loss": 4.824074,
+      "final_valid_loss": 4.948161,
+      "final_train_ppl": 124.471123,
+      "final_valid_ppl": 140.915583
+    },
+    {
+      "codebook_idx": 3,
+      "best_epoch": 14,
+      "best_valid_loss": 5.663816,
+      "best_valid_ppl": 288.246385,
+      "final_train_loss": 5.431603,
+      "final_valid_loss": 5.674829,
+      "final_train_ppl": 228.515161,
+      "final_valid_ppl": 291.43857
+    },
+    {
+      "codebook_idx": 4,
+      "best_epoch": 14,
+      "best_valid_loss": 5.754472,
+      "best_valid_ppl": 315.598986,
+      "final_train_loss": 5.607074,
+      "final_valid_loss": 5.771557,
+      "final_train_ppl": 272.346222,
+      "final_valid_ppl": 321.037267
+    },
+    {
+      "codebook_idx": 5,
+      "best_epoch": 13,
+      "best_valid_loss": 5.566537,
+      "best_valid_ppl": 261.526899,
+      "final_train_loss": 5.398494,
+      "final_valid_loss": 5.588827,
+      "final_train_ppl": 221.073271,
+      "final_valid_ppl": 267.42169
+    }
+  ]
+}

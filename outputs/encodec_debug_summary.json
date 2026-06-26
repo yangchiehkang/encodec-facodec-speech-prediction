@@ -1,0 +1,13 @@
+{
+  "pred_dir": "generated\\encodec_debug\\pred",
+  "ref_dir": "generated\\encodec_debug\\ref",
+  "eval_sr": 16000,
+  "num_total": 20,
+  "num_valid": 20,
+  "stoi_mean": 0.29033523705493636,
+  "pesq_mean": 1.0755568325519562,
+  "dnsmos_sig_mean": NaN,
+  "dnsmos_bak_mean": NaN,
+  "dnsmos_ovrl_mean": NaN,
+  "note": "STOI and PESQ are computed after resampling prediction and reference to 16 kHz. DNSMOS columns are reserved as NaN unless an external DNSMOS model is integrated."
+}

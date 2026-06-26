@@ -1,0 +1,2360 @@
+[
+  {
+    "relative_path": "outputs/codec_oracle_comparison_summary.csv",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/codec_oracle_comparison_summary.csv",
+    "parent": "outputs",
+    "name": "codec_oracle_comparison_summary.csv",
+    "suffix": ".csv",
+    "size_bytes": 2560,
+    "size_mb": 0.00244140625
+  },
+  {
+    "relative_path": "outputs/codec_oracle_comparison_summary.json",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/codec_oracle_comparison_summary.json",
+    "parent": "outputs",
+    "name": "codec_oracle_comparison_summary.json",
+    "suffix": ".json",
+    "size_bytes": 7152,
+    "size_mb": 0.0068206787109375
+  },
+  {
+    "relative_path": "outputs/copy_baseline_results.csv",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/copy_baseline_results.csv",
+    "parent": "outputs",
+    "name": "copy_baseline_results.csv",
+    "suffix": ".csv",
+    "size_bytes": 270942,
+    "size_mb": 0.2583904266357422
+  },
+  {
+    "relative_path": "outputs/copy_baseline_summary.json",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/copy_baseline_summary.json",
+    "parent": "outputs",
+    "name": "copy_baseline_summary.json",
+    "suffix": ".json",
+    "size_bytes": 770,
+    "size_mb": 0.0007343292236328125
+  },
+  {
+    "relative_path": "outputs/encodec_debug_results.csv",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/encodec_debug_results.csv",
+    "parent": "outputs",
+    "name": "encodec_debug_results.csv",
+    "suffix": ".csv",
+    "size_bytes": 4319,
+    "size_mb": 0.004118919372558594
+  },
+  {
+    "relative_path": "outputs/encodec_debug_summary.json",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/encodec_debug_summary.json",
+    "parent": "outputs",
+    "name": "encodec_debug_summary.json",
+    "suffix": ".json",
+    "size_bytes": 491,
+    "size_mb": 0.00046825408935546875
+  },
+  {
+    "relative_path": "outputs/encodec_oracle_results.csv",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/encodec_oracle_results.csv",
+    "parent": "outputs",
+    "name": "encodec_oracle_results.csv",
+    "suffix": ".csv",
+    "size_bytes": 270114,
+    "size_mb": 0.2576007843017578
+  },
+  {
+    "relative_path": "outputs/encodec_oracle_small16_recons/0000_0000_440c0201_encodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/encodec_oracle_small16_recons/0000_0000_440c0201_encodec_recon.wav",
+    "parent": "outputs/encodec_oracle_small16_recons",
+    "name": "0000_0000_440c0201_encodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 274878,
+    "size_mb": 0.2621440887451172
+  },
+  {
+    "relative_path": "outputs/encodec_oracle_small16_recons/0001_0001_440c0202_encodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/encodec_oracle_small16_recons/0001_0001_440c0202_encodec_recon.wav",
+    "parent": "outputs/encodec_oracle_small16_recons",
+    "name": "0001_0001_440c0202_encodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 586132,
+    "size_mb": 0.5589790344238281
+  },
+  {
+    "relative_path": "outputs/encodec_oracle_small16_recons/0002_0002_440c0203_encodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/encodec_oracle_small16_recons/0002_0002_440c0203_encodec_recon.wav",
+    "parent": "outputs/encodec_oracle_small16_recons",
+    "name": "0002_0002_440c0203_encodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 221262,
+    "size_mb": 0.2110118865966797
+  },
+  {
+    "relative_path": "outputs/encodec_oracle_small16_recons/0003_0003_440c0204_encodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/encodec_oracle_small16_recons/0003_0003_440c0204_encodec_recon.wav",
+    "parent": "outputs/encodec_oracle_small16_recons",
+    "name": "0003_0003_440c0204_encodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 553632,
+    "size_mb": 0.527984619140625
+  },
+  {
+    "relative_path": "outputs/encodec_oracle_small16_recons/0004_0004_440c0205_encodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/encodec_oracle_small16_recons/0004_0004_440c0205_encodec_recon.wav",
+    "parent": "outputs/encodec_oracle_small16_recons",
+    "name": "0004_0004_440c0205_encodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 213844,
+    "size_mb": 0.20393753051757812
+  },
+  {
+    "relative_path": "outputs/encodec_oracle_small16_recons/0005_0005_440c0206_encodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/encodec_oracle_small16_recons/0005_0005_440c0206_encodec_recon.wav",
+    "parent": "outputs/encodec_oracle_small16_recons",
+    "name": "0005_0005_440c0206_encodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 246300,
+    "size_mb": 0.23488998413085938
+  },
+  {
+    "relative_path": "outputs/encodec_oracle_small16_recons/0006_0006_440c0207_encodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/encodec_oracle_small16_recons/0006_0006_440c0207_encodec_recon.wav",
+    "parent": "outputs/encodec_oracle_small16_recons",
+    "name": "0006_0006_440c0207_encodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 431722,
+    "size_mb": 0.41172218322753906
+  },
+  {
+    "relative_path": "outputs/encodec_oracle_small16_recons/0007_0007_440c0208_encodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/encodec_oracle_small16_recons/0007_0007_440c0208_encodec_recon.wav",
+    "parent": "outputs/encodec_oracle_small16_recons",
+    "name": "0007_0007_440c0208_encodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 224406,
+    "size_mb": 0.21401023864746094
+  },
+  {
+    "relative_path": "outputs/encodec_oracle_small16_recons/0008_0008_440c0209_encodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/encodec_oracle_small16_recons/0008_0008_440c0209_encodec_recon.wav",
+    "parent": "outputs/encodec_oracle_small16_recons",
+    "name": "0008_0008_440c0209_encodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 226236,
+    "size_mb": 0.21575546264648438
+  },
+  {
+    "relative_path": "outputs/encodec_oracle_small16_recons/0009_0009_440c020a_encodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/encodec_oracle_small16_recons/0009_0009_440c020a_encodec_recon.wav",
+    "parent": "outputs/encodec_oracle_small16_recons",
+    "name": "0009_0009_440c020a_encodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 415828,
+    "size_mb": 0.3965644836425781
+  },
+  {
+    "relative_path": "outputs/encodec_oracle_small16_recons/0010_0010_440c020b_encodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/encodec_oracle_small16_recons/0010_0010_440c020b_encodec_recon.wav",
+    "parent": "outputs/encodec_oracle_small16_recons",
+    "name": "0010_0010_440c020b_encodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 578358,
+    "size_mb": 0.5515651702880859
+  },
+  {
+    "relative_path": "outputs/encodec_oracle_small16_recons/0011_0011_440c020c_encodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/encodec_oracle_small16_recons/0011_0011_440c020c_encodec_recon.wav",
+    "parent": "outputs/encodec_oracle_small16_recons",
+    "name": "0011_0011_440c020c_encodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 559626,
+    "size_mb": 0.5337009429931641
+  },
+  {
+    "relative_path": "outputs/encodec_oracle_small16_recons/0012_0012_440c020d_encodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/encodec_oracle_small16_recons/0012_0012_440c020d_encodec_recon.wav",
+    "parent": "outputs/encodec_oracle_small16_recons",
+    "name": "0012_0012_440c020d_encodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 420682,
+    "size_mb": 0.40119361877441406
+  },
+  {
+    "relative_path": "outputs/encodec_oracle_small16_recons/0013_0013_440c020e_encodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/encodec_oracle_small16_recons/0013_0013_440c020e_encodec_recon.wav",
+    "parent": "outputs/encodec_oracle_small16_recons",
+    "name": "0013_0013_440c020e_encodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 592174,
+    "size_mb": 0.5647411346435547
+  },
+  {
+    "relative_path": "outputs/encodec_oracle_small16_recons/0014_0014_440c020f_encodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/encodec_oracle_small16_recons/0014_0014_440c020f_encodec_recon.wav",
+    "parent": "outputs/encodec_oracle_small16_recons",
+    "name": "0014_0014_440c020f_encodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 508110,
+    "size_mb": 0.4845714569091797
+  },
+  {
+    "relative_path": "outputs/encodec_oracle_small16_recons/0015_0015_440c020g_encodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/encodec_oracle_small16_recons/0015_0015_440c020g_encodec_recon.wav",
+    "parent": "outputs/encodec_oracle_small16_recons",
+    "name": "0015_0015_440c020g_encodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 296866,
+    "size_mb": 0.2831134796142578
+  },
+  {
+    "relative_path": "outputs/encodec_oracle_small16_results.csv",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/encodec_oracle_small16_results.csv",
+    "parent": "outputs",
+    "name": "encodec_oracle_small16_results.csv",
+    "suffix": ".csv",
+    "size_bytes": 8822,
+    "size_mb": 0.008413314819335938
+  },
+  {
+    "relative_path": "outputs/encodec_oracle_small16_summary.json",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/encodec_oracle_small16_summary.json",
+    "parent": "outputs",
+    "name": "encodec_oracle_small16_summary.json",
+    "suffix": ".json",
+    "size_bytes": 3261,
+    "size_mb": 0.0031099319458007812
+  },
+  {
+    "relative_path": "outputs/encodec_oracle_summary.json",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/encodec_oracle_summary.json",
+    "parent": "outputs",
+    "name": "encodec_oracle_summary.json",
+    "suffix": ".json",
+    "size_bytes": 863,
+    "size_mb": 0.0008230209350585938
+  },
+  {
+    "relative_path": "outputs/encodec_small_results.csv",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/encodec_small_results.csv",
+    "parent": "outputs",
+    "name": "encodec_small_results.csv",
+    "suffix": ".csv",
+    "size_bytes": 136677,
+    "size_mb": 0.13034534454345703
+  },
+  {
+    "relative_path": "outputs/encodec_small_summary.json",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/encodec_small_summary.json",
+    "parent": "outputs",
+    "name": "encodec_small_summary.json",
+    "suffix": ".json",
+    "size_bytes": 492,
+    "size_mb": 0.000469207763671875
+  },
+  {
+    "relative_path": "outputs/encodec_topk20_results.csv",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/encodec_topk20_results.csv",
+    "parent": "outputs",
+    "name": "encodec_topk20_results.csv",
+    "suffix": ".csv",
+    "size_bytes": 138224,
+    "size_mb": 0.1318206787109375
+  },
+  {
+    "relative_path": "outputs/encodec_topk20_summary.json",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/encodec_topk20_summary.json",
+    "parent": "outputs",
+    "name": "encodec_topk20_summary.json",
+    "suffix": ".json",
+    "size_bytes": 493,
+    "size_mb": 0.00047016143798828125
+  },
+  {
+    "relative_path": "outputs/eval_encodec_small.csv",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/eval_encodec_small.csv",
+    "parent": "outputs",
+    "name": "eval_encodec_small.csv",
+    "suffix": ".csv",
+    "size_bytes": 136677,
+    "size_mb": 0.13034534454345703
+  },
+  {
+    "relative_path": "outputs/eval_encodec_small_summary.json",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/eval_encodec_small_summary.json",
+    "parent": "outputs",
+    "name": "eval_encodec_small_summary.json",
+    "suffix": ".json",
+    "size_bytes": 492,
+    "size_mb": 0.000469207763671875
+  },
+  {
+    "relative_path": "outputs/facodec_lm_all_codebooks_metrics.csv",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_lm_all_codebooks_metrics.csv",
+    "parent": "outputs",
+    "name": "facodec_lm_all_codebooks_metrics.csv",
+    "suffix": ".csv",
+    "size_bytes": 3010,
+    "size_mb": 0.0028705596923828125
+  },
+  {
+    "relative_path": "outputs/facodec_lm_all_codebooks_metrics.json",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_lm_all_codebooks_metrics.json",
+    "parent": "outputs",
+    "name": "facodec_lm_all_codebooks_metrics.json",
+    "suffix": ".json",
+    "size_bytes": 5981,
+    "size_mb": 0.005703926086425781
+  },
+  {
+    "relative_path": "outputs/facodec_lm_best_valid_loss_bar.png",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_lm_best_valid_loss_bar.png",
+    "parent": "outputs",
+    "name": "facodec_lm_best_valid_loss_bar.png",
+    "suffix": ".png",
+    "size_bytes": 38322,
+    "size_mb": 0.03654670715332031
+  },
+  {
+    "relative_path": "outputs/facodec_lm_best_valid_ppl_bar.png",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_lm_best_valid_ppl_bar.png",
+    "parent": "outputs",
+    "name": "facodec_lm_best_valid_ppl_bar.png",
+    "suffix": ".png",
+    "size_bytes": 46635,
+    "size_mb": 0.04447460174560547
+  },
+  {
+    "relative_path": "outputs/facodec_lm_cb0_train.log",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_lm_cb0_train.log",
+    "parent": "outputs",
+    "name": "facodec_lm_cb0_train.log",
+    "suffix": ".log",
+    "size_bytes": 171339,
+    "size_mb": 0.16340160369873047
+  },
+  {
+    "relative_path": "outputs/facodec_lm_cb0_train_summary.json",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_lm_cb0_train_summary.json",
+    "parent": "outputs",
+    "name": "facodec_lm_cb0_train_summary.json",
+    "suffix": ".json",
+    "size_bytes": 1479,
+    "size_mb": 0.0014104843139648438
+  },
+  {
+    "relative_path": "outputs/facodec_lm_cb1_train.log",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_lm_cb1_train.log",
+    "parent": "outputs",
+    "name": "facodec_lm_cb1_train.log",
+    "suffix": ".log",
+    "size_bytes": 171327,
+    "size_mb": 0.1633901596069336
+  },
+  {
+    "relative_path": "outputs/facodec_lm_cb2_train.log",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_lm_cb2_train.log",
+    "parent": "outputs",
+    "name": "facodec_lm_cb2_train.log",
+    "suffix": ".log",
+    "size_bytes": 172418,
+    "size_mb": 0.1644306182861328
+  },
+  {
+    "relative_path": "outputs/facodec_lm_cb3_train.log",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_lm_cb3_train.log",
+    "parent": "outputs",
+    "name": "facodec_lm_cb3_train.log",
+    "suffix": ".log",
+    "size_bytes": 172124,
+    "size_mb": 0.16415023803710938
+  },
+  {
+    "relative_path": "outputs/facodec_lm_cb4_train.log",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_lm_cb4_train.log",
+    "parent": "outputs",
+    "name": "facodec_lm_cb4_train.log",
+    "suffix": ".log",
+    "size_bytes": 172222,
+    "size_mb": 0.1642436981201172
+  },
+  {
+    "relative_path": "outputs/facodec_lm_cb5_train.log",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_lm_cb5_train.log",
+    "parent": "outputs",
+    "name": "facodec_lm_cb5_train.log",
+    "suffix": ".log",
+    "size_bytes": 172026,
+    "size_mb": 0.16405677795410156
+  },
+  {
+    "relative_path": "outputs/facodec_lm_loss_curves.png",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_lm_loss_curves.png",
+    "parent": "outputs",
+    "name": "facodec_lm_loss_curves.png",
+    "suffix": ".png",
+    "size_bytes": 237740,
+    "size_mb": 0.22672653198242188
+  },
+  {
+    "relative_path": "outputs/facodec_lm_plot_summary.json",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_lm_plot_summary.json",
+    "parent": "outputs",
+    "name": "facodec_lm_plot_summary.json",
+    "suffix": ".json",
+    "size_bytes": 2068,
+    "size_mb": 0.001972198486328125
+  },
+  {
+    "relative_path": "outputs/facodec_lm_remaining_codebooks_summary.json",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_lm_remaining_codebooks_summary.json",
+    "parent": "outputs",
+    "name": "facodec_lm_remaining_codebooks_summary.json",
+    "suffix": ".json",
+    "size_bytes": 8461,
+    "size_mb": 0.008069038391113281
+  },
+  {
+    "relative_path": "outputs/facodec_lm_smoke_cb0_summary.json",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_lm_smoke_cb0_summary.json",
+    "parent": "outputs",
+    "name": "facodec_lm_smoke_cb0_summary.json",
+    "suffix": ".json",
+    "size_bytes": 1059,
+    "size_mb": 0.0010099411010742188
+  },
+  {
+    "relative_path": "outputs/facodec_lm_smoke_cb0_train.log",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_lm_smoke_cb0_train.log",
+    "parent": "outputs",
+    "name": "facodec_lm_smoke_cb0_train.log",
+    "suffix": ".log",
+    "size_bytes": 10524,
+    "size_mb": 0.010036468505859375
+  },
+  {
+    "relative_path": "outputs/facodec_lm_smoke_summary.json",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_lm_smoke_summary.json",
+    "parent": "outputs",
+    "name": "facodec_lm_smoke_summary.json",
+    "suffix": ".json",
+    "size_bytes": 783,
+    "size_mb": 0.0007467269897460938
+  },
+  {
+    "relative_path": "outputs/facodec_lm_smoke_summary_fixed.json",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_lm_smoke_summary_fixed.json",
+    "parent": "outputs",
+    "name": "facodec_lm_smoke_summary_fixed.json",
+    "suffix": ".json",
+    "size_bytes": 996,
+    "size_mb": 0.000949859619140625
+  },
+  {
+    "relative_path": "outputs/facodec_lm_smoke_train.log",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_lm_smoke_train.log",
+    "parent": "outputs",
+    "name": "facodec_lm_smoke_train.log",
+    "suffix": ".log",
+    "size_bytes": 3347,
+    "size_mb": 0.0031919479370117188
+  },
+  {
+    "relative_path": "outputs/facodec_lm_smoke_train_fixed.log",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_lm_smoke_train_fixed.log",
+    "parent": "outputs",
+    "name": "facodec_lm_smoke_train_fixed.log",
+    "suffix": ".log",
+    "size_bytes": 3003,
+    "size_mb": 0.0028638839721679688
+  },
+  {
+    "relative_path": "outputs/facodec_oracle_small16_recons/0000_0000_440c0201_facodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_oracle_small16_recons/0000_0000_440c0201_facodec_recon.wav",
+    "parent": "outputs/facodec_oracle_small16_recons",
+    "name": "0000_0000_440c0201_facodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 183278,
+    "size_mb": 0.1747875213623047
+  },
+  {
+    "relative_path": "outputs/facodec_oracle_small16_recons/0001_0001_440c0202_facodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_oracle_small16_recons/0001_0001_440c0202_facodec_recon.wav",
+    "parent": "outputs/facodec_oracle_small16_recons",
+    "name": "0001_0001_440c0202_facodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 390780,
+    "size_mb": 0.3726768493652344
+  },
+  {
+    "relative_path": "outputs/facodec_oracle_small16_recons/0002_0002_440c0203_facodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_oracle_small16_recons/0002_0002_440c0203_facodec_recon.wav",
+    "parent": "outputs/facodec_oracle_small16_recons",
+    "name": "0002_0002_440c0203_facodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 147534,
+    "size_mb": 0.1406993865966797
+  },
+  {
+    "relative_path": "outputs/facodec_oracle_small16_recons/0003_0003_440c0204_facodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_oracle_small16_recons/0003_0003_440c0204_facodec_recon.wav",
+    "parent": "outputs/facodec_oracle_small16_recons",
+    "name": "0003_0003_440c0204_facodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 369114,
+    "size_mb": 0.35201454162597656
+  },
+  {
+    "relative_path": "outputs/facodec_oracle_small16_recons/0004_0004_440c0205_facodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_oracle_small16_recons/0004_0004_440c0205_facodec_recon.wav",
+    "parent": "outputs/facodec_oracle_small16_recons",
+    "name": "0004_0004_440c0205_facodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 142588,
+    "size_mb": 0.13598251342773438
+  },
+  {
+    "relative_path": "outputs/facodec_oracle_small16_recons/0005_0005_440c0206_facodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_oracle_small16_recons/0005_0005_440c0206_facodec_recon.wav",
+    "parent": "outputs/facodec_oracle_small16_recons",
+    "name": "0005_0005_440c0206_facodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 164226,
+    "size_mb": 0.1566181182861328
+  },
+  {
+    "relative_path": "outputs/facodec_oracle_small16_recons/0006_0006_440c0207_facodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_oracle_small16_recons/0006_0006_440c0207_facodec_recon.wav",
+    "parent": "outputs/facodec_oracle_small16_recons",
+    "name": "0006_0006_440c0207_facodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 287840,
+    "size_mb": 0.274505615234375
+  },
+  {
+    "relative_path": "outputs/facodec_oracle_small16_recons/0007_0007_440c0208_facodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_oracle_small16_recons/0007_0007_440c0208_facodec_recon.wav",
+    "parent": "outputs/facodec_oracle_small16_recons",
+    "name": "0007_0007_440c0208_facodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 149630,
+    "size_mb": 0.1426982879638672
+  },
+  {
+    "relative_path": "outputs/facodec_oracle_small16_recons/0008_0008_440c0209_facodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_oracle_small16_recons/0008_0008_440c0209_facodec_recon.wav",
+    "parent": "outputs/facodec_oracle_small16_recons",
+    "name": "0008_0008_440c0209_facodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 150850,
+    "size_mb": 0.1438617706298828
+  },
+  {
+    "relative_path": "outputs/facodec_oracle_small16_recons/0009_0009_440c020a_facodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_oracle_small16_recons/0009_0009_440c020a_facodec_recon.wav",
+    "parent": "outputs/facodec_oracle_small16_recons",
+    "name": "0009_0009_440c020a_facodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 277244,
+    "size_mb": 0.2644004821777344
+  },
+  {
+    "relative_path": "outputs/facodec_oracle_small16_recons/0010_0010_440c020b_facodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_oracle_small16_recons/0010_0010_440c020b_facodec_recon.wav",
+    "parent": "outputs/facodec_oracle_small16_recons",
+    "name": "0010_0010_440c020b_facodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 385598,
+    "size_mb": 0.3677349090576172
+  },
+  {
+    "relative_path": "outputs/facodec_oracle_small16_recons/0011_0011_440c020c_facodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_oracle_small16_recons/0011_0011_440c020c_facodec_recon.wav",
+    "parent": "outputs/facodec_oracle_small16_recons",
+    "name": "0011_0011_440c020c_facodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 373110,
+    "size_mb": 0.35582542419433594
+  },
+  {
+    "relative_path": "outputs/facodec_oracle_small16_recons/0012_0012_440c020d_facodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_oracle_small16_recons/0012_0012_440c020d_facodec_recon.wav",
+    "parent": "outputs/facodec_oracle_small16_recons",
+    "name": "0012_0012_440c020d_facodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 280480,
+    "size_mb": 0.267486572265625
+  },
+  {
+    "relative_path": "outputs/facodec_oracle_small16_recons/0013_0013_440c020e_facodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_oracle_small16_recons/0013_0013_440c020e_facodec_recon.wav",
+    "parent": "outputs/facodec_oracle_small16_recons",
+    "name": "0013_0013_440c020e_facodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 394808,
+    "size_mb": 0.37651824951171875
+  },
+  {
+    "relative_path": "outputs/facodec_oracle_small16_recons/0014_0014_440c020f_facodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_oracle_small16_recons/0014_0014_440c020f_facodec_recon.wav",
+    "parent": "outputs/facodec_oracle_small16_recons",
+    "name": "0014_0014_440c020f_facodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 338766,
+    "size_mb": 0.3230724334716797
+  },
+  {
+    "relative_path": "outputs/facodec_oracle_small16_recons/0015_0015_440c020g_facodec_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_oracle_small16_recons/0015_0015_440c020g_facodec_recon.wav",
+    "parent": "outputs/facodec_oracle_small16_recons",
+    "name": "0015_0015_440c020g_facodec_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 197936,
+    "size_mb": 0.1887664794921875
+  },
+  {
+    "relative_path": "outputs/facodec_oracle_small16_results.csv",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_oracle_small16_results.csv",
+    "parent": "outputs",
+    "name": "facodec_oracle_small16_results.csv",
+    "suffix": ".csv",
+    "size_bytes": 7733,
+    "size_mb": 0.007374763488769531
+  },
+  {
+    "relative_path": "outputs/facodec_oracle_small16_summary.json",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_oracle_small16_summary.json",
+    "parent": "outputs",
+    "name": "facodec_oracle_small16_summary.json",
+    "suffix": ".json",
+    "size_bytes": 2922,
+    "size_mb": 0.0027866363525390625
+  },
+  {
+    "relative_path": "outputs/facodec_smoke_recon.wav",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/facodec_smoke_recon.wav",
+    "parent": "outputs",
+    "name": "facodec_smoke_recon.wav",
+    "suffix": ".wav",
+    "size_bytes": 183278,
+    "size_mb": 0.1747875213623047
+  },
+  {
+    "relative_path": "outputs/section_8_2_kaggle_output_check_summary.json",
+    "absolute_path": "/kaggle/working/speech_prediction_project/outputs/section_8_2_kaggle_output_check_summary.json",
+    "parent": "outputs",
+    "name": "section_8_2_kaggle_output_check_summary.json",
+    "suffix": ".json",
+    "size_bytes": 1376,
+    "size_mb": 0.001312255859375
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/args.json",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/args.json",
+    "parent": "checkpoints/encodec_medium",
+    "name": "args.json",
+    "suffix": ".json",
+    "size_bytes": 416,
+    "size_mb": 0.000396728515625
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/best.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/best.pt",
+    "parent": "checkpoints/encodec_medium",
+    "name": "best.pt",
+    "suffix": ".pt",
+    "size_bytes": 140825193,
+    "size_mb": 134.30136966705322
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_001.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_001.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_001.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_002.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_002.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_002.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_003.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_003.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_003.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_004.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_004.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_004.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_005.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_005.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_005.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_006.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_006.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_006.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_007.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_007.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_007.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_008.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_008.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_008.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_009.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_009.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_009.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_010.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_010.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_010.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_011.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_011.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_011.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_012.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_012.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_012.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_013.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_013.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_013.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_014.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_014.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_014.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_015.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_015.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_015.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_016.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_016.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_016.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_017.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_017.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_017.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_018.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_018.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_018.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_019.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_019.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_019.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_020.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_020.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_020.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_021.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_021.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_021.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_022.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_022.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_022.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_023.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_023.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_023.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_024.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_024.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_024.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_025.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_025.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_025.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_026.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_026.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_026.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_027.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_027.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_027.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_028.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_028.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_028.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_029.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_029.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_029.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/checkpoints/epoch_030.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/checkpoints/epoch_030.pt",
+    "parent": "checkpoints/encodec_medium/checkpoints",
+    "name": "epoch_030.pt",
+    "suffix": ".pt",
+    "size_bytes": 140841547,
+    "size_mb": 134.31696605682373
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/last.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/last.pt",
+    "parent": "checkpoints/encodec_medium",
+    "name": "last.pt",
+    "suffix": ".pt",
+    "size_bytes": 140825193,
+    "size_mb": 134.30136966705322
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/logs/train_log.csv",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/logs/train_log.csv",
+    "parent": "checkpoints/encodec_medium/logs",
+    "name": "train_log.csv",
+    "suffix": ".csv",
+    "size_bytes": 3367,
+    "size_mb": 0.0032110214233398438
+  },
+  {
+    "relative_path": "checkpoints/encodec_medium/planned_run_config.json",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/encodec_medium/planned_run_config.json",
+    "parent": "checkpoints/encodec_medium",
+    "name": "planned_run_config.json",
+    "suffix": ".json",
+    "size_bytes": 416,
+    "size_mb": 0.000396728515625
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb0/args.json",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb0/args.json",
+    "parent": "checkpoints/facodec_small_cb0",
+    "name": "args.json",
+    "suffix": ".json",
+    "size_bytes": 564,
+    "size_mb": 0.000537872314453125
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb0/best.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb0/best.pt",
+    "parent": "checkpoints/facodec_small_cb0",
+    "name": "best.pt",
+    "suffix": ".pt",
+    "size_bytes": 45833545,
+    "size_mb": 43.7102746963501
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb0/checkpoints/epoch_001.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb0/checkpoints/epoch_001.pt",
+    "parent": "checkpoints/facodec_small_cb0/checkpoints",
+    "name": "epoch_001.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb0/checkpoints/epoch_002.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb0/checkpoints/epoch_002.pt",
+    "parent": "checkpoints/facodec_small_cb0/checkpoints",
+    "name": "epoch_002.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb0/checkpoints/epoch_003.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb0/checkpoints/epoch_003.pt",
+    "parent": "checkpoints/facodec_small_cb0/checkpoints",
+    "name": "epoch_003.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb0/checkpoints/epoch_004.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb0/checkpoints/epoch_004.pt",
+    "parent": "checkpoints/facodec_small_cb0/checkpoints",
+    "name": "epoch_004.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb0/checkpoints/epoch_005.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb0/checkpoints/epoch_005.pt",
+    "parent": "checkpoints/facodec_small_cb0/checkpoints",
+    "name": "epoch_005.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb0/checkpoints/epoch_006.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb0/checkpoints/epoch_006.pt",
+    "parent": "checkpoints/facodec_small_cb0/checkpoints",
+    "name": "epoch_006.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb0/checkpoints/epoch_007.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb0/checkpoints/epoch_007.pt",
+    "parent": "checkpoints/facodec_small_cb0/checkpoints",
+    "name": "epoch_007.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb0/checkpoints/epoch_008.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb0/checkpoints/epoch_008.pt",
+    "parent": "checkpoints/facodec_small_cb0/checkpoints",
+    "name": "epoch_008.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb0/checkpoints/epoch_009.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb0/checkpoints/epoch_009.pt",
+    "parent": "checkpoints/facodec_small_cb0/checkpoints",
+    "name": "epoch_009.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb0/checkpoints/epoch_010.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb0/checkpoints/epoch_010.pt",
+    "parent": "checkpoints/facodec_small_cb0/checkpoints",
+    "name": "epoch_010.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb0/checkpoints/epoch_011.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb0/checkpoints/epoch_011.pt",
+    "parent": "checkpoints/facodec_small_cb0/checkpoints",
+    "name": "epoch_011.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb0/checkpoints/epoch_012.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb0/checkpoints/epoch_012.pt",
+    "parent": "checkpoints/facodec_small_cb0/checkpoints",
+    "name": "epoch_012.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb0/checkpoints/epoch_013.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb0/checkpoints/epoch_013.pt",
+    "parent": "checkpoints/facodec_small_cb0/checkpoints",
+    "name": "epoch_013.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb0/checkpoints/epoch_014.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb0/checkpoints/epoch_014.pt",
+    "parent": "checkpoints/facodec_small_cb0/checkpoints",
+    "name": "epoch_014.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb0/checkpoints/epoch_015.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb0/checkpoints/epoch_015.pt",
+    "parent": "checkpoints/facodec_small_cb0/checkpoints",
+    "name": "epoch_015.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb0/checkpoints/epoch_016.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb0/checkpoints/epoch_016.pt",
+    "parent": "checkpoints/facodec_small_cb0/checkpoints",
+    "name": "epoch_016.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb0/checkpoints/epoch_017.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb0/checkpoints/epoch_017.pt",
+    "parent": "checkpoints/facodec_small_cb0/checkpoints",
+    "name": "epoch_017.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb0/checkpoints/epoch_018.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb0/checkpoints/epoch_018.pt",
+    "parent": "checkpoints/facodec_small_cb0/checkpoints",
+    "name": "epoch_018.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb0/checkpoints/epoch_019.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb0/checkpoints/epoch_019.pt",
+    "parent": "checkpoints/facodec_small_cb0/checkpoints",
+    "name": "epoch_019.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb0/checkpoints/epoch_020.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb0/checkpoints/epoch_020.pt",
+    "parent": "checkpoints/facodec_small_cb0/checkpoints",
+    "name": "epoch_020.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb0/last.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb0/last.pt",
+    "parent": "checkpoints/facodec_small_cb0",
+    "name": "last.pt",
+    "suffix": ".pt",
+    "size_bytes": 45833545,
+    "size_mb": 43.7102746963501
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb0/logs/train_log.csv",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb0/logs/train_log.csv",
+    "parent": "checkpoints/facodec_small_cb0/logs",
+    "name": "train_log.csv",
+    "suffix": ".csv",
+    "size_bytes": 3196,
+    "size_mb": 0.003047943115234375
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb1/args.json",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb1/args.json",
+    "parent": "checkpoints/facodec_small_cb1",
+    "name": "args.json",
+    "suffix": ".json",
+    "size_bytes": 564,
+    "size_mb": 0.000537872314453125
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb1/best.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb1/best.pt",
+    "parent": "checkpoints/facodec_small_cb1",
+    "name": "best.pt",
+    "suffix": ".pt",
+    "size_bytes": 45833545,
+    "size_mb": 43.7102746963501
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb1/checkpoints/epoch_001.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb1/checkpoints/epoch_001.pt",
+    "parent": "checkpoints/facodec_small_cb1/checkpoints",
+    "name": "epoch_001.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb1/checkpoints/epoch_002.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb1/checkpoints/epoch_002.pt",
+    "parent": "checkpoints/facodec_small_cb1/checkpoints",
+    "name": "epoch_002.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb1/checkpoints/epoch_003.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb1/checkpoints/epoch_003.pt",
+    "parent": "checkpoints/facodec_small_cb1/checkpoints",
+    "name": "epoch_003.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb1/checkpoints/epoch_004.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb1/checkpoints/epoch_004.pt",
+    "parent": "checkpoints/facodec_small_cb1/checkpoints",
+    "name": "epoch_004.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb1/checkpoints/epoch_005.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb1/checkpoints/epoch_005.pt",
+    "parent": "checkpoints/facodec_small_cb1/checkpoints",
+    "name": "epoch_005.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb1/checkpoints/epoch_006.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb1/checkpoints/epoch_006.pt",
+    "parent": "checkpoints/facodec_small_cb1/checkpoints",
+    "name": "epoch_006.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb1/checkpoints/epoch_007.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb1/checkpoints/epoch_007.pt",
+    "parent": "checkpoints/facodec_small_cb1/checkpoints",
+    "name": "epoch_007.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb1/checkpoints/epoch_008.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb1/checkpoints/epoch_008.pt",
+    "parent": "checkpoints/facodec_small_cb1/checkpoints",
+    "name": "epoch_008.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb1/checkpoints/epoch_009.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb1/checkpoints/epoch_009.pt",
+    "parent": "checkpoints/facodec_small_cb1/checkpoints",
+    "name": "epoch_009.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb1/checkpoints/epoch_010.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb1/checkpoints/epoch_010.pt",
+    "parent": "checkpoints/facodec_small_cb1/checkpoints",
+    "name": "epoch_010.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb1/checkpoints/epoch_011.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb1/checkpoints/epoch_011.pt",
+    "parent": "checkpoints/facodec_small_cb1/checkpoints",
+    "name": "epoch_011.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb1/checkpoints/epoch_012.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb1/checkpoints/epoch_012.pt",
+    "parent": "checkpoints/facodec_small_cb1/checkpoints",
+    "name": "epoch_012.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb1/checkpoints/epoch_013.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb1/checkpoints/epoch_013.pt",
+    "parent": "checkpoints/facodec_small_cb1/checkpoints",
+    "name": "epoch_013.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb1/checkpoints/epoch_014.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb1/checkpoints/epoch_014.pt",
+    "parent": "checkpoints/facodec_small_cb1/checkpoints",
+    "name": "epoch_014.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb1/checkpoints/epoch_015.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb1/checkpoints/epoch_015.pt",
+    "parent": "checkpoints/facodec_small_cb1/checkpoints",
+    "name": "epoch_015.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb1/checkpoints/epoch_016.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb1/checkpoints/epoch_016.pt",
+    "parent": "checkpoints/facodec_small_cb1/checkpoints",
+    "name": "epoch_016.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb1/checkpoints/epoch_017.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb1/checkpoints/epoch_017.pt",
+    "parent": "checkpoints/facodec_small_cb1/checkpoints",
+    "name": "epoch_017.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb1/checkpoints/epoch_018.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb1/checkpoints/epoch_018.pt",
+    "parent": "checkpoints/facodec_small_cb1/checkpoints",
+    "name": "epoch_018.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb1/checkpoints/epoch_019.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb1/checkpoints/epoch_019.pt",
+    "parent": "checkpoints/facodec_small_cb1/checkpoints",
+    "name": "epoch_019.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb1/checkpoints/epoch_020.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb1/checkpoints/epoch_020.pt",
+    "parent": "checkpoints/facodec_small_cb1/checkpoints",
+    "name": "epoch_020.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb1/last.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb1/last.pt",
+    "parent": "checkpoints/facodec_small_cb1",
+    "name": "last.pt",
+    "suffix": ".pt",
+    "size_bytes": 45833545,
+    "size_mb": 43.7102746963501
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb1/logs/train_log.csv",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb1/logs/train_log.csv",
+    "parent": "checkpoints/facodec_small_cb1/logs",
+    "name": "train_log.csv",
+    "suffix": ".csv",
+    "size_bytes": 3193,
+    "size_mb": 0.0030450820922851562
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb2/args.json",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb2/args.json",
+    "parent": "checkpoints/facodec_small_cb2",
+    "name": "args.json",
+    "suffix": ".json",
+    "size_bytes": 564,
+    "size_mb": 0.000537872314453125
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb2/best.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb2/best.pt",
+    "parent": "checkpoints/facodec_small_cb2",
+    "name": "best.pt",
+    "suffix": ".pt",
+    "size_bytes": 45833545,
+    "size_mb": 43.7102746963501
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb2/checkpoints/epoch_001.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb2/checkpoints/epoch_001.pt",
+    "parent": "checkpoints/facodec_small_cb2/checkpoints",
+    "name": "epoch_001.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb2/checkpoints/epoch_002.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb2/checkpoints/epoch_002.pt",
+    "parent": "checkpoints/facodec_small_cb2/checkpoints",
+    "name": "epoch_002.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb2/checkpoints/epoch_003.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb2/checkpoints/epoch_003.pt",
+    "parent": "checkpoints/facodec_small_cb2/checkpoints",
+    "name": "epoch_003.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb2/checkpoints/epoch_004.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb2/checkpoints/epoch_004.pt",
+    "parent": "checkpoints/facodec_small_cb2/checkpoints",
+    "name": "epoch_004.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb2/checkpoints/epoch_005.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb2/checkpoints/epoch_005.pt",
+    "parent": "checkpoints/facodec_small_cb2/checkpoints",
+    "name": "epoch_005.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb2/checkpoints/epoch_006.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb2/checkpoints/epoch_006.pt",
+    "parent": "checkpoints/facodec_small_cb2/checkpoints",
+    "name": "epoch_006.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb2/checkpoints/epoch_007.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb2/checkpoints/epoch_007.pt",
+    "parent": "checkpoints/facodec_small_cb2/checkpoints",
+    "name": "epoch_007.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb2/checkpoints/epoch_008.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb2/checkpoints/epoch_008.pt",
+    "parent": "checkpoints/facodec_small_cb2/checkpoints",
+    "name": "epoch_008.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb2/checkpoints/epoch_009.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb2/checkpoints/epoch_009.pt",
+    "parent": "checkpoints/facodec_small_cb2/checkpoints",
+    "name": "epoch_009.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb2/checkpoints/epoch_010.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb2/checkpoints/epoch_010.pt",
+    "parent": "checkpoints/facodec_small_cb2/checkpoints",
+    "name": "epoch_010.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb2/checkpoints/epoch_011.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb2/checkpoints/epoch_011.pt",
+    "parent": "checkpoints/facodec_small_cb2/checkpoints",
+    "name": "epoch_011.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb2/checkpoints/epoch_012.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb2/checkpoints/epoch_012.pt",
+    "parent": "checkpoints/facodec_small_cb2/checkpoints",
+    "name": "epoch_012.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb2/checkpoints/epoch_013.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb2/checkpoints/epoch_013.pt",
+    "parent": "checkpoints/facodec_small_cb2/checkpoints",
+    "name": "epoch_013.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb2/checkpoints/epoch_014.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb2/checkpoints/epoch_014.pt",
+    "parent": "checkpoints/facodec_small_cb2/checkpoints",
+    "name": "epoch_014.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb2/checkpoints/epoch_015.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb2/checkpoints/epoch_015.pt",
+    "parent": "checkpoints/facodec_small_cb2/checkpoints",
+    "name": "epoch_015.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb2/checkpoints/epoch_016.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb2/checkpoints/epoch_016.pt",
+    "parent": "checkpoints/facodec_small_cb2/checkpoints",
+    "name": "epoch_016.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb2/checkpoints/epoch_017.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb2/checkpoints/epoch_017.pt",
+    "parent": "checkpoints/facodec_small_cb2/checkpoints",
+    "name": "epoch_017.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb2/checkpoints/epoch_018.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb2/checkpoints/epoch_018.pt",
+    "parent": "checkpoints/facodec_small_cb2/checkpoints",
+    "name": "epoch_018.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb2/checkpoints/epoch_019.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb2/checkpoints/epoch_019.pt",
+    "parent": "checkpoints/facodec_small_cb2/checkpoints",
+    "name": "epoch_019.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb2/checkpoints/epoch_020.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb2/checkpoints/epoch_020.pt",
+    "parent": "checkpoints/facodec_small_cb2/checkpoints",
+    "name": "epoch_020.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb2/last.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb2/last.pt",
+    "parent": "checkpoints/facodec_small_cb2",
+    "name": "last.pt",
+    "suffix": ".pt",
+    "size_bytes": 45833545,
+    "size_mb": 43.7102746963501
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb2/logs/train_log.csv",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb2/logs/train_log.csv",
+    "parent": "checkpoints/facodec_small_cb2/logs",
+    "name": "train_log.csv",
+    "suffix": ".csv",
+    "size_bytes": 3230,
+    "size_mb": 0.0030803680419921875
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb3/args.json",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb3/args.json",
+    "parent": "checkpoints/facodec_small_cb3",
+    "name": "args.json",
+    "suffix": ".json",
+    "size_bytes": 564,
+    "size_mb": 0.000537872314453125
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb3/best.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb3/best.pt",
+    "parent": "checkpoints/facodec_small_cb3",
+    "name": "best.pt",
+    "suffix": ".pt",
+    "size_bytes": 45833545,
+    "size_mb": 43.7102746963501
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb3/checkpoints/epoch_001.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb3/checkpoints/epoch_001.pt",
+    "parent": "checkpoints/facodec_small_cb3/checkpoints",
+    "name": "epoch_001.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb3/checkpoints/epoch_002.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb3/checkpoints/epoch_002.pt",
+    "parent": "checkpoints/facodec_small_cb3/checkpoints",
+    "name": "epoch_002.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb3/checkpoints/epoch_003.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb3/checkpoints/epoch_003.pt",
+    "parent": "checkpoints/facodec_small_cb3/checkpoints",
+    "name": "epoch_003.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb3/checkpoints/epoch_004.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb3/checkpoints/epoch_004.pt",
+    "parent": "checkpoints/facodec_small_cb3/checkpoints",
+    "name": "epoch_004.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb3/checkpoints/epoch_005.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb3/checkpoints/epoch_005.pt",
+    "parent": "checkpoints/facodec_small_cb3/checkpoints",
+    "name": "epoch_005.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb3/checkpoints/epoch_006.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb3/checkpoints/epoch_006.pt",
+    "parent": "checkpoints/facodec_small_cb3/checkpoints",
+    "name": "epoch_006.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb3/checkpoints/epoch_007.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb3/checkpoints/epoch_007.pt",
+    "parent": "checkpoints/facodec_small_cb3/checkpoints",
+    "name": "epoch_007.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb3/checkpoints/epoch_008.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb3/checkpoints/epoch_008.pt",
+    "parent": "checkpoints/facodec_small_cb3/checkpoints",
+    "name": "epoch_008.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb3/checkpoints/epoch_009.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb3/checkpoints/epoch_009.pt",
+    "parent": "checkpoints/facodec_small_cb3/checkpoints",
+    "name": "epoch_009.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb3/checkpoints/epoch_010.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb3/checkpoints/epoch_010.pt",
+    "parent": "checkpoints/facodec_small_cb3/checkpoints",
+    "name": "epoch_010.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb3/checkpoints/epoch_011.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb3/checkpoints/epoch_011.pt",
+    "parent": "checkpoints/facodec_small_cb3/checkpoints",
+    "name": "epoch_011.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb3/checkpoints/epoch_012.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb3/checkpoints/epoch_012.pt",
+    "parent": "checkpoints/facodec_small_cb3/checkpoints",
+    "name": "epoch_012.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb3/checkpoints/epoch_013.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb3/checkpoints/epoch_013.pt",
+    "parent": "checkpoints/facodec_small_cb3/checkpoints",
+    "name": "epoch_013.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb3/checkpoints/epoch_014.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb3/checkpoints/epoch_014.pt",
+    "parent": "checkpoints/facodec_small_cb3/checkpoints",
+    "name": "epoch_014.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb3/checkpoints/epoch_015.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb3/checkpoints/epoch_015.pt",
+    "parent": "checkpoints/facodec_small_cb3/checkpoints",
+    "name": "epoch_015.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb3/checkpoints/epoch_016.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb3/checkpoints/epoch_016.pt",
+    "parent": "checkpoints/facodec_small_cb3/checkpoints",
+    "name": "epoch_016.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb3/checkpoints/epoch_017.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb3/checkpoints/epoch_017.pt",
+    "parent": "checkpoints/facodec_small_cb3/checkpoints",
+    "name": "epoch_017.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb3/checkpoints/epoch_018.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb3/checkpoints/epoch_018.pt",
+    "parent": "checkpoints/facodec_small_cb3/checkpoints",
+    "name": "epoch_018.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb3/checkpoints/epoch_019.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb3/checkpoints/epoch_019.pt",
+    "parent": "checkpoints/facodec_small_cb3/checkpoints",
+    "name": "epoch_019.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb3/checkpoints/epoch_020.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb3/checkpoints/epoch_020.pt",
+    "parent": "checkpoints/facodec_small_cb3/checkpoints",
+    "name": "epoch_020.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb3/last.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb3/last.pt",
+    "parent": "checkpoints/facodec_small_cb3",
+    "name": "last.pt",
+    "suffix": ".pt",
+    "size_bytes": 45833545,
+    "size_mb": 43.7102746963501
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb3/logs/train_log.csv",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb3/logs/train_log.csv",
+    "parent": "checkpoints/facodec_small_cb3/logs",
+    "name": "train_log.csv",
+    "suffix": ".csv",
+    "size_bytes": 3230,
+    "size_mb": 0.0030803680419921875
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb4/args.json",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb4/args.json",
+    "parent": "checkpoints/facodec_small_cb4",
+    "name": "args.json",
+    "suffix": ".json",
+    "size_bytes": 564,
+    "size_mb": 0.000537872314453125
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb4/best.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb4/best.pt",
+    "parent": "checkpoints/facodec_small_cb4",
+    "name": "best.pt",
+    "suffix": ".pt",
+    "size_bytes": 45833545,
+    "size_mb": 43.7102746963501
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb4/checkpoints/epoch_001.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb4/checkpoints/epoch_001.pt",
+    "parent": "checkpoints/facodec_small_cb4/checkpoints",
+    "name": "epoch_001.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb4/checkpoints/epoch_002.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb4/checkpoints/epoch_002.pt",
+    "parent": "checkpoints/facodec_small_cb4/checkpoints",
+    "name": "epoch_002.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb4/checkpoints/epoch_003.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb4/checkpoints/epoch_003.pt",
+    "parent": "checkpoints/facodec_small_cb4/checkpoints",
+    "name": "epoch_003.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb4/checkpoints/epoch_004.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb4/checkpoints/epoch_004.pt",
+    "parent": "checkpoints/facodec_small_cb4/checkpoints",
+    "name": "epoch_004.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb4/checkpoints/epoch_005.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb4/checkpoints/epoch_005.pt",
+    "parent": "checkpoints/facodec_small_cb4/checkpoints",
+    "name": "epoch_005.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb4/checkpoints/epoch_006.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb4/checkpoints/epoch_006.pt",
+    "parent": "checkpoints/facodec_small_cb4/checkpoints",
+    "name": "epoch_006.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb4/checkpoints/epoch_007.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb4/checkpoints/epoch_007.pt",
+    "parent": "checkpoints/facodec_small_cb4/checkpoints",
+    "name": "epoch_007.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb4/checkpoints/epoch_008.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb4/checkpoints/epoch_008.pt",
+    "parent": "checkpoints/facodec_small_cb4/checkpoints",
+    "name": "epoch_008.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb4/checkpoints/epoch_009.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb4/checkpoints/epoch_009.pt",
+    "parent": "checkpoints/facodec_small_cb4/checkpoints",
+    "name": "epoch_009.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb4/checkpoints/epoch_010.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb4/checkpoints/epoch_010.pt",
+    "parent": "checkpoints/facodec_small_cb4/checkpoints",
+    "name": "epoch_010.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb4/checkpoints/epoch_011.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb4/checkpoints/epoch_011.pt",
+    "parent": "checkpoints/facodec_small_cb4/checkpoints",
+    "name": "epoch_011.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb4/checkpoints/epoch_012.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb4/checkpoints/epoch_012.pt",
+    "parent": "checkpoints/facodec_small_cb4/checkpoints",
+    "name": "epoch_012.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb4/checkpoints/epoch_013.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb4/checkpoints/epoch_013.pt",
+    "parent": "checkpoints/facodec_small_cb4/checkpoints",
+    "name": "epoch_013.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb4/checkpoints/epoch_014.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb4/checkpoints/epoch_014.pt",
+    "parent": "checkpoints/facodec_small_cb4/checkpoints",
+    "name": "epoch_014.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb4/checkpoints/epoch_015.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb4/checkpoints/epoch_015.pt",
+    "parent": "checkpoints/facodec_small_cb4/checkpoints",
+    "name": "epoch_015.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb4/checkpoints/epoch_016.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb4/checkpoints/epoch_016.pt",
+    "parent": "checkpoints/facodec_small_cb4/checkpoints",
+    "name": "epoch_016.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb4/checkpoints/epoch_017.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb4/checkpoints/epoch_017.pt",
+    "parent": "checkpoints/facodec_small_cb4/checkpoints",
+    "name": "epoch_017.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb4/checkpoints/epoch_018.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb4/checkpoints/epoch_018.pt",
+    "parent": "checkpoints/facodec_small_cb4/checkpoints",
+    "name": "epoch_018.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb4/checkpoints/epoch_019.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb4/checkpoints/epoch_019.pt",
+    "parent": "checkpoints/facodec_small_cb4/checkpoints",
+    "name": "epoch_019.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb4/checkpoints/epoch_020.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb4/checkpoints/epoch_020.pt",
+    "parent": "checkpoints/facodec_small_cb4/checkpoints",
+    "name": "epoch_020.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb4/last.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb4/last.pt",
+    "parent": "checkpoints/facodec_small_cb4",
+    "name": "last.pt",
+    "suffix": ".pt",
+    "size_bytes": 45833545,
+    "size_mb": 43.7102746963501
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb4/logs/train_log.csv",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb4/logs/train_log.csv",
+    "parent": "checkpoints/facodec_small_cb4/logs",
+    "name": "train_log.csv",
+    "suffix": ".csv",
+    "size_bytes": 3230,
+    "size_mb": 0.0030803680419921875
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb5/args.json",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb5/args.json",
+    "parent": "checkpoints/facodec_small_cb5",
+    "name": "args.json",
+    "suffix": ".json",
+    "size_bytes": 564,
+    "size_mb": 0.000537872314453125
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb5/best.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb5/best.pt",
+    "parent": "checkpoints/facodec_small_cb5",
+    "name": "best.pt",
+    "suffix": ".pt",
+    "size_bytes": 45833545,
+    "size_mb": 43.7102746963501
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb5/checkpoints/epoch_001.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb5/checkpoints/epoch_001.pt",
+    "parent": "checkpoints/facodec_small_cb5/checkpoints",
+    "name": "epoch_001.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb5/checkpoints/epoch_002.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb5/checkpoints/epoch_002.pt",
+    "parent": "checkpoints/facodec_small_cb5/checkpoints",
+    "name": "epoch_002.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb5/checkpoints/epoch_003.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb5/checkpoints/epoch_003.pt",
+    "parent": "checkpoints/facodec_small_cb5/checkpoints",
+    "name": "epoch_003.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb5/checkpoints/epoch_004.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb5/checkpoints/epoch_004.pt",
+    "parent": "checkpoints/facodec_small_cb5/checkpoints",
+    "name": "epoch_004.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb5/checkpoints/epoch_005.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb5/checkpoints/epoch_005.pt",
+    "parent": "checkpoints/facodec_small_cb5/checkpoints",
+    "name": "epoch_005.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb5/checkpoints/epoch_006.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb5/checkpoints/epoch_006.pt",
+    "parent": "checkpoints/facodec_small_cb5/checkpoints",
+    "name": "epoch_006.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb5/checkpoints/epoch_007.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb5/checkpoints/epoch_007.pt",
+    "parent": "checkpoints/facodec_small_cb5/checkpoints",
+    "name": "epoch_007.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb5/checkpoints/epoch_008.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb5/checkpoints/epoch_008.pt",
+    "parent": "checkpoints/facodec_small_cb5/checkpoints",
+    "name": "epoch_008.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb5/checkpoints/epoch_009.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb5/checkpoints/epoch_009.pt",
+    "parent": "checkpoints/facodec_small_cb5/checkpoints",
+    "name": "epoch_009.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb5/checkpoints/epoch_010.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb5/checkpoints/epoch_010.pt",
+    "parent": "checkpoints/facodec_small_cb5/checkpoints",
+    "name": "epoch_010.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb5/checkpoints/epoch_011.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb5/checkpoints/epoch_011.pt",
+    "parent": "checkpoints/facodec_small_cb5/checkpoints",
+    "name": "epoch_011.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb5/checkpoints/epoch_012.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb5/checkpoints/epoch_012.pt",
+    "parent": "checkpoints/facodec_small_cb5/checkpoints",
+    "name": "epoch_012.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb5/checkpoints/epoch_013.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb5/checkpoints/epoch_013.pt",
+    "parent": "checkpoints/facodec_small_cb5/checkpoints",
+    "name": "epoch_013.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb5/checkpoints/epoch_014.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb5/checkpoints/epoch_014.pt",
+    "parent": "checkpoints/facodec_small_cb5/checkpoints",
+    "name": "epoch_014.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb5/checkpoints/epoch_015.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb5/checkpoints/epoch_015.pt",
+    "parent": "checkpoints/facodec_small_cb5/checkpoints",
+    "name": "epoch_015.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb5/checkpoints/epoch_016.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb5/checkpoints/epoch_016.pt",
+    "parent": "checkpoints/facodec_small_cb5/checkpoints",
+    "name": "epoch_016.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb5/checkpoints/epoch_017.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb5/checkpoints/epoch_017.pt",
+    "parent": "checkpoints/facodec_small_cb5/checkpoints",
+    "name": "epoch_017.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb5/checkpoints/epoch_018.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb5/checkpoints/epoch_018.pt",
+    "parent": "checkpoints/facodec_small_cb5/checkpoints",
+    "name": "epoch_018.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb5/checkpoints/epoch_019.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb5/checkpoints/epoch_019.pt",
+    "parent": "checkpoints/facodec_small_cb5/checkpoints",
+    "name": "epoch_019.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb5/checkpoints/epoch_020.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb5/checkpoints/epoch_020.pt",
+    "parent": "checkpoints/facodec_small_cb5/checkpoints",
+    "name": "epoch_020.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb5/last.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb5/last.pt",
+    "parent": "checkpoints/facodec_small_cb5",
+    "name": "last.pt",
+    "suffix": ".pt",
+    "size_bytes": 45833545,
+    "size_mb": 43.7102746963501
+  },
+  {
+    "relative_path": "checkpoints/facodec_small_cb5/logs/train_log.csv",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_small_cb5/logs/train_log.csv",
+    "parent": "checkpoints/facodec_small_cb5/logs",
+    "name": "train_log.csv",
+    "suffix": ".csv",
+    "size_bytes": 3230,
+    "size_mb": 0.0030803680419921875
+  },
+  {
+    "relative_path": "checkpoints/facodec_smoke/args.json",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_smoke/args.json",
+    "parent": "checkpoints/facodec_smoke",
+    "name": "args.json",
+    "suffix": ".json",
+    "size_bytes": 565,
+    "size_mb": 0.0005388259887695312
+  },
+  {
+    "relative_path": "checkpoints/facodec_smoke_cb0/args.json",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_smoke_cb0/args.json",
+    "parent": "checkpoints/facodec_smoke_cb0",
+    "name": "args.json",
+    "suffix": ".json",
+    "size_bytes": 563,
+    "size_mb": 0.0005369186401367188
+  },
+  {
+    "relative_path": "checkpoints/facodec_smoke_cb0/best.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_smoke_cb0/best.pt",
+    "parent": "checkpoints/facodec_smoke_cb0",
+    "name": "best.pt",
+    "suffix": ".pt",
+    "size_bytes": 45833545,
+    "size_mb": 43.7102746963501
+  },
+  {
+    "relative_path": "checkpoints/facodec_smoke_cb0/checkpoints/epoch_001.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_smoke_cb0/checkpoints/epoch_001.pt",
+    "parent": "checkpoints/facodec_smoke_cb0/checkpoints",
+    "name": "epoch_001.pt",
+    "suffix": ".pt",
+    "size_bytes": 45844811,
+    "size_mb": 43.72101879119873
+  },
+  {
+    "relative_path": "checkpoints/facodec_smoke_cb0/last.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_smoke_cb0/last.pt",
+    "parent": "checkpoints/facodec_smoke_cb0",
+    "name": "last.pt",
+    "suffix": ".pt",
+    "size_bytes": 45833545,
+    "size_mb": 43.7102746963501
+  },
+  {
+    "relative_path": "checkpoints/facodec_smoke_cb0/logs/train_log.csv",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/facodec_smoke_cb0/logs/train_log.csv",
+    "parent": "checkpoints/facodec_smoke_cb0/logs",
+    "name": "train_log.csv",
+    "suffix": ".csv",
+    "size_bytes": 255,
+    "size_mb": 0.00024318695068359375
+  },
+  {
+    "relative_path": "checkpoints/smoke_train/args.json",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/smoke_train/args.json",
+    "parent": "checkpoints/smoke_train",
+    "name": "args.json",
+    "suffix": ".json",
+    "size_bytes": 411,
+    "size_mb": 0.00039196014404296875
+  },
+  {
+    "relative_path": "checkpoints/smoke_train/best.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/smoke_train/best.pt",
+    "parent": "checkpoints/smoke_train",
+    "name": "best.pt",
+    "suffix": ".pt",
+    "size_bytes": 8330857,
+    "size_mb": 7.944924354553223
+  },
+  {
+    "relative_path": "checkpoints/smoke_train/checkpoints/epoch_001.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/smoke_train/checkpoints/epoch_001.pt",
+    "parent": "checkpoints/smoke_train/checkpoints",
+    "name": "epoch_001.pt",
+    "suffix": ".pt",
+    "size_bytes": 8337035,
+    "size_mb": 7.9508161544799805
+  },
+  {
+    "relative_path": "checkpoints/smoke_train/last.pt",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/smoke_train/last.pt",
+    "parent": "checkpoints/smoke_train",
+    "name": "last.pt",
+    "suffix": ".pt",
+    "size_bytes": 8330857,
+    "size_mb": 7.944924354553223
+  },
+  {
+    "relative_path": "checkpoints/smoke_train/logs/train_log.csv",
+    "absolute_path": "/kaggle/working/speech_prediction_project/checkpoints/smoke_train/logs/train_log.csv",
+    "parent": "checkpoints/smoke_train/logs",
+    "name": "train_log.csv",
+    "suffix": ".csv",
+    "size_bytes": 206,
+    "size_mb": 0.0001964569091796875
+  }
+]
